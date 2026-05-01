@@ -12,6 +12,7 @@ import {
   MessageCircle, Moon, Check, Bed, ShoppingBag,
 } from "lucide-react"
 
+
 const content = raw as any
 const h = content.home
 const hero = h.hero
@@ -82,6 +83,53 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Promo Banners */}
+      {h.promoBanners?.items?.length > 0 && (
+        <section className="py-8 bg-[#0F1624]">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {h.promoBanners.items.map((b: any, i: number) => (
+                <a key={i} href={b.link || '#'} target="_blank" rel="noopener noreferrer"
+                  className="block rounded-xl overflow-hidden hover:opacity-90 transition">
+                  <img src={b.image} alt={b.alt || ''} className="w-full h-32 object-cover" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Bundles */}
+      {h.bundles?.items?.length > 0 && (
+        <section className="py-16 bg-[#EFF2F7]">
+          <div className="max-w-5xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-2">{h.bundles.title}</h2>
+            <p className="text-center text-gray-600 mb-10">{h.bundles.subtitle}</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {h.bundles.items.map((bundle: any, i: number) => (
+                <div key={i} className="bg-white rounded-xl p-6 border border-gray-200 flex flex-col">
+                  <h3 className="text-xl font-bold mb-2">{bundle.name}</h3>
+                  <ul className="text-sm text-gray-600 space-y-1 mb-4 flex-1">
+                    {bundle.products.map((p: string, j: number) => (
+                      <li key={j} className="flex items-center gap-2"><Check className="w-3 h-3 text-green-600" /> {p}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-auto">
+                    {bundle.savings && <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full">Ahorrás {bundle.savings}</span>}
+                    <p className="text-2xl font-bold text-[#0F1624] mt-2">{bundle.bundlePrice}</p>
+                    {bundle.originalPrice && <p className="text-sm text-gray-400 line-through">{bundle.originalPrice}</p>}
+                    <a href={bundle.whatsapp} target="_blank" rel="noopener noreferrer"
+                      className="mt-3 block text-center bg-[#0F1624] text-white py-2 rounded-lg text-sm font-medium hover:bg-[#3A4A5D] transition">
+                      Consultar combo
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Trust Badges */}
       <section className="py-16">

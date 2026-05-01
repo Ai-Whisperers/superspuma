@@ -40,12 +40,42 @@ export default function ProductoPage() {
             <h1 className="text-3xl font-bold mt-4">{product.name}</h1>
             <p className="text-gray-600 mt-2">{product.description}</p>
             <p className="text-3xl font-bold text-[#0F1624] mt-6">{product.price}</p>
-            <p className="text-sm text-gray-500 mt-1">Precio desde. Consultá medidas disponibles.</p>
-            <p className="text-sm text-green-700 font-medium mt-2">Hasta 18 cuotas sin interés</p>
+            {product.priceFrom && <p className="text-sm text-gray-500 mt-1">Precio desde: {product.priceFrom}</p>}
+
+            {/* Badges */}
+            {product.badges && (
+              <div className="flex flex-wrap gap-2 mt-4">
+                {product.badges.map((b: string, i: number) => (
+                  <span key={i} className="text-xs font-bold bg-[#EFF2F7] px-3 py-1 rounded-full text-[#0F1624]">{b}</span>
+                ))}
+              </div>
+            )}
+
+            {/* Specs grid */}
+            <div className="grid grid-cols-2 gap-3 mt-6 bg-[#F8F9FA] rounded-xl p-4">
+              {product.firmness && <div><span className="text-xs text-gray-500">Firmeza</span><p className="font-semibold text-sm">{product.firmness}</p></div>}
+              {product.warranty && <div><span className="text-xs text-gray-500">Garantía</span><p className="font-semibold text-sm">{product.warranty}</p></div>}
+              {product.weight && <div><span className="text-xs text-gray-500">Capacidad</span><p className="font-semibold text-sm">{product.weight}</p></div>}
+              {product.colors && <div><span className="text-xs text-gray-500">Colores</span><p className="font-semibold text-sm">{product.colors.join(', ')}</p></div>}
+            </div>
+
+            {/* Sizes */}
+            {product.sizes && (
+              <div className="mt-6">
+                <h3 className="font-bold text-sm mb-2">Medidas y precios</h3>
+                <div className="space-y-1">
+                  {product.sizes.map((s: string, i: number) => (
+                    <div key={i} className="flex justify-between text-sm bg-[#F8F9FA] px-3 py-2 rounded-lg">{s.split(':').map((part: string, j: number) => <span key={j} className={j === 0 ? 'text-gray-600' : 'font-semibold'}>{part.trim()}</span>)}</div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <p className="text-sm text-green-700 font-medium mt-4">Hasta 18 cuotas sin interés</p>
             <a
               href={`https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20${product.name}%20(${product.price})`}
               target="_blank" rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 bg-[#0F1624] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3A4A5D] transition"
+              className="mt-4 inline-flex items-center gap-2 bg-[#0F1624] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3A4A5D] transition"
             >
               <MessageCircle className="w-5 h-5" /> Consultar por WhatsApp
             </a>
