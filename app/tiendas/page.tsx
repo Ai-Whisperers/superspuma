@@ -25,8 +25,16 @@ export default function TiendasPage() {
               <div>
                 <h3 className="font-bold">{s.name}</h3>
                 {s.type && <span className="text-xs bg-[#EFF2F7] px-2 py-0.5 rounded-full inline-block mt-1">{s.type}</span>}
-                {s.address && <p className="text-sm text-gray-500 mt-1">{s.address}</p>}
-                {s.phone && <p className="text-sm text-gray-500">{s.phone}</p>}
+                {s.address && (
+                  <a href={`https://www.google.com/maps/search/${encodeURIComponent(s.address + ', ' + s.name)}`}
+                    target="_blank" rel="noopener noreferrer"
+                    className="text-sm text-gray-500 mt-1 hover:text-[#0F1624] underline underline-offset-2 block">
+                    {s.address}
+                  </a>
+                )}
+                {s.phone && (
+                  <a href={`tel:${s.phone.replace(/[\s+]/g, '')}`} className="text-sm text-gray-500 hover:text-[#0F1624] block">{s.phone}</a>
+                )}
                 {s.hours && <p className="text-sm text-gray-500 mt-1">{s.hours}</p>}
                 {s.lat && s.lng && (
                   <a href={`https://www.google.com/maps?q=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer"
