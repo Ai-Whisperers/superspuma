@@ -25,19 +25,24 @@ export default function TiendaPage() {
             <h2 className="text-2xl font-bold text-[#0F1624] mb-6 border-b border-gray-200 pb-2">{cat}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {products.filter((p: any) => p.category === cat).map((p: any) => (
-                <a key={p.slug} href={`/producto/${p.slug}`} className="block bg-white rounded-xl p-5 border border-gray-100 hover:shadow-md transition group">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <h3 className="font-bold text-[#0F1624] group-hover:text-[#3A4A5D]">{p.name}</h3>
-                      <span className="text-xs text-gray-500 uppercase tracking-wide">{p.line}</span>
-                    </div>
-                  </div>
-                  <p className="text-sm text-gray-600 mt-2">{p.description}</p>
-                  <div className="flex items-center justify-between mt-4">
-                    <span className="font-bold text-[#0F1624]">{p.price}</span>
-                    <span className="text-xs bg-[#EFF2F7] px-2 py-1 rounded">{p.category}</span>
-                  </div>
-                </a>
+                 <a key={p.slug} href={`/producto/${p.slug}`} className="block bg-white rounded-xl overflow-hidden border border-gray-100 hover:shadow-md transition group">
+                   <div className="aspect-[4/3] bg-[#F8F9FA] overflow-hidden">
+                     <img src={p.image || '/superspuma/images/products/titanium.png'} alt={p.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform" />
+                   </div>
+                   <div className="p-5">
+                     <div className="flex justify-between items-start">
+                       <div>
+                         <h3 className="font-bold text-[#0F1624] group-hover:text-[#3A4A5D]">{p.name}</h3>
+                         <span className="text-xs text-gray-500 uppercase tracking-wide">{p.line}</span>
+                       </div>
+                     </div>
+                     <p className="text-sm text-gray-600 mt-2">{p.description}</p>
+                     <div className="flex items-center justify-between mt-4">
+                       <span className="font-bold text-[#0F1624]">{p.price}</span>
+                       <span className="text-xs bg-[#EFF2F7] px-2 py-1 rounded">{p.category}</span>
+                     </div>
+                   </div>
+                 </a>
               ))}
             </div>
           </div>

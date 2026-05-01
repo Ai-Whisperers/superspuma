@@ -20,7 +20,7 @@ export function Header({ logo }: { logo?: string }) {
     <header className="sticky top-0 z-40 border-b border-gray-200 bg-white/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-2" aria-label="Superspuma — Ir al inicio">
-          <div className="h-10 w-10 rounded-lg bg-[#0F1624] flex items-center justify-center text-white font-bold text-sm">SS</div>
+          <img src="/superspuma/images/icons/logo.svg" alt="Superspuma" className="h-10" />
           <span className="hidden text-lg font-bold text-[#0F1624] sm:inline">Superspuma</span>
         </Link>
         <nav className="flex items-center gap-1" aria-label="Navegación principal">

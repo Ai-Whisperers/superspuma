@@ -20,7 +20,7 @@ export default function ProductoPage() {
   const product = allProducts.find((p: any) => p.slug === slug)
   if (!product) notFound()
 
-  const imgSrc = `https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&q=80`
+  const imgSrc = product.image || '/superspuma/images/products/titanium.png'
 
   return (
     <>
