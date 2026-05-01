@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #0F1624;
+  --primary-foreground: #FFFFFF;
+  --secondary: #3A4A5D;
+  --secondary-foreground: #FFFFFF;
+  --accent: #B3C7E3;
+  --accent-foreground: #0F1624;
+  --background: #FFFFFF;
+  --surface: #F8F9FA;
+  --surface-light: #EFF2F7;
+  --text: #1A1A1A;
+  --text-light: #4A4A4A;
+  --text-muted: #6B7280;
+  --success: #059669;
+  --error: #DC2626;
+  --warning: #D97706;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}

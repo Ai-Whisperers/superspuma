@@ -1,0 +1,186 @@
+{
+  "siteName": "Superspuma",
+  "businessName": "Superspuma",
+  "tagline": "Colchones y Sommiers en Paraguay desde 1976",
+  "founded": "1976",
+  "whatsapp": "+595974202025",
+  "whatsappLink": "https://wa.me/595974202025",
+  "phone": "+595 981 111 222",
+  "email": "info@superspuma.com.py",
+  "address": "Ruta Ypané - Villeta y Arroyo Avay, Villeta - Central, Paraguay",
+  "navigation": {
+    "businessName": "Superspuma",
+    "ctaText": "Consultar por WhatsApp",
+    "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20colchones%20Superspuma",
+    "items": [
+      { "label": "Inicio", "href": "/" },
+      { "label": "Tienda", "href": "/tienda" },
+      { "label": "Nosotros", "href": "/nosotros" },
+      { "label": "Tiendas", "href": "/tiendas" },
+      { "label": "Guías", "href": "/guias" },
+      { "label": "FAQ", "href": "/faq" },
+      { "label": "Contacto", "href": "/contacto" }
+    ]
+  },
+  "home": {
+    "seo": {
+      "title": "Superspuma — Colchones y Sommiers en Paraguay | Fábrica desde 1976",
+      "description": "Fabricantes paraguayos de colchones, sommiers y accesorios de descanso desde 1976. 19 modelos, 5 tiendas, envío a todo el país y hasta 18 cuotas sin interés."
+    },
+    "hero": {
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1920&q=80",
+      "headline": "Dormir mejor empieza por un Superspuma",
+      "subheadline": "Fábrica paraguaya de colchones y sommiers desde 1976. Envío a todo el país, garantía de fábrica y hasta 18 cuotas sin interés.",
+      "ctaPrimaryText": "Ver colchones",
+      "ctaPrimaryHref": "/tienda",
+      "ctaSecondaryText": "Consultar por WhatsApp",
+      "ctaSecondaryHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20colchones%20Superspuma"
+    },
+    "trustBadges": {
+      "title": "Por qué elegir Superspuma",
+      "items": [
+        { "icon": "Factory", "text": "Fabricación paraguaya", "description": "Desde 1976 en Villeta" },
+        { "icon": "Truck", "text": "Envío a todo el país", "description": "Gratis en compras desde Gs. 1.000.000" },
+        { "icon": "CreditCard", "text": "Hasta 18 cuotas sin interés", "description": "Con todas las tarjetas" },
+        { "icon": "ShieldCheck", "text": "Garantía de fábrica", "description": "Certificado incluido (2 a 6 años)" },
+        { "icon": "Store", "text": "13 puntos en todo el país", "description": "Tiendas + centros logísticos" },
+        { "icon": "Wrench", "text": "Servicio técnico", "description": "Línea 0981 111 222" }
+      ]
+    },
+    "stats": {
+      "items": [
+        { "value": "+49", "label": "Años en el mercado", "icon": "Award" },
+        { "value": "+200", "label": "Colaboradores", "icon": "Users" },
+        { "value": "19", "label": "Modelos en catálogo", "icon": "Package" },
+        { "value": "13", "label": "Puntos en el país", "icon": "MapPin" }
+      ]
+    },
+    "products": [
+      { "slug": "titanium", "name": "Titanium", "line": "Premium", "category": "Resorte", "price": "Gs. 1.800.000", "description": "Premium con Euro Pillow Top y resortes Bonell reforzados." },
+      { "slug": "imperial", "name": "Imperial", "line": "Alta Gama", "category": "Resorte", "price": "Gs. 2.230.000", "description": "Resortes Bonell con Pillow Top para descanso regenerador." },
+      { "slug": "harmony", "name": "Harmony", "line": "Confort", "category": "Resorte", "price": "Gs. 1.274.000", "description": "Equilibrio ideal entre soporte y confort con Euro-Top." },
+      { "slug": "serrat", "name": "Serrat", "line": "Confort", "category": "Resorte", "price": "Gs. 1.150.000", "description": "Resorte con superficie suave, firmeza media." },
+      { "slug": "delta-soft", "name": "Delta Soft", "line": "Confort", "category": "Resorte", "price": "Gs. 1.050.000", "description": "Tacto mullido con soporte de resorte." },
+      { "slug": "essential-top", "name": "Essential Top", "line": "Esencial", "category": "Resorte", "price": "Gs. 890.000", "description": "Resorte con Pillow Top — entrada a línea Esencial." },
+      { "slug": "renovate", "name": "Renovate", "line": "Esencial", "category": "Resorte", "price": "Gs. 780.000", "description": "Reemplazo económico para tu viejo colchón." },
+      { "slug": "impulse-kids", "name": "Impulse Kids", "line": "Infantil", "category": "Resorte", "price": "Gs. 780.000", "description": "Resorte premium para niños, reversible, antiácaros." },
+      { "slug": "impulse-teens", "name": "Impulse Teens", "line": "Juvenil", "category": "Resorte", "price": "Gs. 890.000", "description": "Resorte para adolescentes, más robusto." },
+      { "slug": "pop-kids", "name": "Pop Kids", "line": "Infantil", "category": "Resorte", "price": "Gs. 649.000", "description": "Línea económica infantil con diseños divertidos." },
+      { "slug": "pop-plus", "name": "Pop Plus", "line": "Esencial", "category": "Resorte", "price": "Gs. 850.000", "description": "Pop reforzado para uso adulto." },
+      { "slug": "pop-teen", "name": "Pop Teen", "line": "Juvenil", "category": "Resorte", "price": "Gs. 780.000", "description": "Pop juvenil — precio accesible." },
+      { "slug": "superteen", "name": "Superteen", "line": "Juvenil", "category": "Resorte", "price": "Gs. 980.000", "description": "Línea premium juvenil." },
+      { "slug": "ortopedico", "name": "Ortopédico", "line": "Premium", "category": "Espuma", "price": "Gs. 1.290.000", "description": "Firmeza máxima — hasta 140 kg, 6 años de garantía." },
+      { "slug": "duo-confort", "name": "Duo Confort", "line": "Alta Gama", "category": "Espuma", "price": "Gs. 980.000", "description": "Viscoelástica adaptable — alivio de puntos de presión." },
+      { "slug": "serena", "name": "Serena", "line": "Confort", "category": "Espuma", "price": "Gs. 850.000", "description": "Espuma de alta densidad con buen confort." },
+      { "slug": "golden", "name": "Golden", "line": "Confort", "category": "Espuma", "price": "Gs. 696.000", "description": "Espuma reversible con Pillow Top." },
+      { "slug": "luna-soft", "name": "Luna Soft", "line": "Esencial", "category": "Espuma", "price": "Gs. 500.000", "description": "Espuma económica — suave y liviana." },
+      { "slug": "super-kids", "name": "Super Kids", "line": "Infantil", "category": "Espuma", "price": "Gs. 420.000", "description": "Espuma infantil liviana." },
+      { "slug": "base-box-baul", "name": "Base Box Baúl", "line": "Accesorio", "category": "Accesorios", "price": "Gs. 890.000", "description": "Sommier con espacio de guardado bajo la tapa." },
+      { "slug": "protector-colchon", "name": "Protector Impermeable", "line": "Accesorio", "category": "Accesorios", "price": "Gs. 120.000", "description": "Impermeable y transpirable." },
+      { "slug": "cubre-colchon", "name": "Cubre Colchón", "line": "Accesorio", "category": "Accesorios", "price": "Gs. 95.000", "description": "Protección acolchada para tu colchón." },
+      { "slug": "almohada-superspuma", "name": "Almohada Superspuma", "line": "Accesorio", "category": "Accesorios", "price": "Gs. 65.000", "description": "Almohada de fibra o espuma." }
+    ],
+    "features": {
+      "title": "Nuestra historia",
+      "items": [
+        { "title": "49 años fabricando", "description": "Fundada el 24 de julio de 1976 en Villeta, Paraguay." },
+        { "title": "200+ colaboradores", "description": "Equipo paraguayo comprometido con la calidad." },
+        { "title": "Líderes regionales", "description": "Innovación en bienestar y descanso a nivel regional." },
+        { "title": "Hecho en Paraguay", "description": "Fabricación nacional que compite con cualquier marca regional." }
+      ]
+    },
+    "comparison": {
+      "title": "Compará nuestros más vendidos",
+      "subtitle": "Los cuatro modelos que cubren el 80% de las consultas.",
+      "items": [
+        {
+          "name": "Luna Soft", "price": "Gs. 500.000", "badge": null, "highlighted": false,
+          "features": ["Espuma densidad media", "Firmeza suave", "Hasta 60 kg", "2 años garantía"],
+          "whatsapp": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Luna%20Soft"
+        },
+        {
+          "name": "Harmony", "price": "Gs. 1.274.000", "badge": "Más consultado", "highlighted": true,
+          "features": ["Resortes con Euro-Top", "Firmeza media", "Hasta 90 kg por lado", "Antiácaros", "3 años garantía"],
+          "whatsapp": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Harmony"
+        },
+        {
+          "name": "Duo Confort", "price": "Gs. 980.000", "badge": null, "highlighted": false,
+          "features": ["Espuma viscoelástica", "Firmeza adaptable", "Hasta 110 kg", "Algodón stretch", "3 años garantía"],
+          "whatsapp": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Duo%20Confort"
+        },
+        {
+          "name": "Titanium", "price": "Gs. 1.800.000", "badge": "Premium", "highlighted": false,
+          "features": ["Resortes Bonell reforzados", "Euro Pillow Top", "Hasta 120 kg", "Jacquard antiácaros", "5 años garantía"],
+          "whatsapp": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Titanium"
+        }
+      ]
+    },
+    "process": {
+      "title": "Cómo comprar",
+      "subtitle": "De la consulta a tu casa en 4 pasos",
+      "steps": [
+        { "number": 1, "title": "Elegí tu colchón", "description": "Explorá los 19 modelos online o probalos en nuestras tiendas.", "icon": "Search", "duration": "Cuando quieras" },
+        { "number": 2, "title": "Consultá disponibilidad", "description": "Escribinos por WhatsApp con el modelo y medida.", "icon": "MessageCircle", "duration": "Respuesta en el día" },
+        { "number": 3, "title": "Coordinamos la entrega", "description": "Zonas urbanas: envío en 24-72 hs. Instalación incluida.", "icon": "Truck", "duration": "1 a 5 días" },
+        { "number": 4, "title": "Disfrutá tu descanso", "description": "Con certificado de garantía y soporte técnico.", "icon": "Moon", "duration": "2 a 6 años de garantía" }
+      ]
+    },
+    "testimonials": {
+      "title": "Clientes que duermen mejor",
+      "items": [
+        { "quote": "Hace 12 años compré un Imperial y todavía está impecable.", "author": "Rosa M.", "role": "Asunción", "rating": 5 },
+        { "quote": "Tengo problemas de columna y el Duo Confort me cambió la vida.", "author": "Carlos B.", "role": "San Lorenzo", "rating": 5 },
+        { "quote": "Compramos un juego Titanium completo. La entrega llegó al otro día.", "author": "Andrea y Lucas", "role": "Luque", "rating": 5 },
+        { "quote": "Para mis gemelos elegí los Pop Kids por los diseños.", "author": "Verónica C.", "role": "Fernando de la Mora", "rating": 5 },
+        { "quote": "Lo compré en 18 cuotas sin interés. Calidad real sin romper el presupuesto.", "author": "Julio R.", "role": "Capiatá", "rating": 5 },
+        { "quote": "El Ortopédico le dio a mi mamá el soporte firme que necesitaba.", "author": "María L.", "role": "Asunción", "rating": 5 }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        { "category": "Medidas", "question": "¿Qué medidas fabrican?", "answer": "1 plaza (80x190), 1½ (100x190 o 120x190), 2 plazas (140x190), Queen (160x200), King (180x200) y Super King (200x200). Medidas especiales a pedido." },
+        { "category": "Medidas", "question": "¿Qué medida me conviene para matrimonio?", "answer": "Recomendamos Queen (160x200) mínimo. Si hay niños o mascotas, King (180x200)." },
+        { "category": "Firmeza", "question": "¿Cómo elijo la firmeza?", "answer": "Menos de 70 kg: firmeza media. 70-100 kg: media-firme. Más de 100 kg o problemas de columna: firme/extra firme." },
+        { "category": "Firmeza", "question": "¿Resorte o espuma?", "answer": "Resorte: mayor soporte, ventilación, durabilidad. Espuma: más económico, mejor adaptación. Depende de tu preferencia." },
+        { "category": "Garantía", "question": "¿Cuánto dura la garantía?", "answer": "Línea Esencial: 2 años. Confort: 3 años. Premium (Titanium): 5 años. Ortopédico: 6 años." },
+        { "category": "Garantía", "question": "¿Qué no cubre?", "answer": "Manchas, roturas por mal uso, humedad excesiva, sommier inadecuado, hundimientos normales <2cm tras 1er año." },
+        { "category": "Entrega", "question": "¿Hacen envíos a todo el país?", "answer": "Sí. Asunción y Central: 24-72h. Interior: 3-7 días. Gratis desde Gs. 1.000.000." },
+        { "category": "Entrega", "question": "¿Se llevan mi colchón viejo?", "answer": "Sí, retiro sin costo el mismo día en compras de colchones nuevos." },
+        { "category": "Pago", "question": "¿En cuántas cuotas?", "answer": "Hasta 18 cuotas sin interés con Visa, Mastercard, Credicard, Cabal, Pánal." },
+        { "category": "Cuidado", "question": "¿Cómo cuidar mi colchón?", "answer": "Rotarlo cada 3 meses. Usar protector impermeable. Ventilar la habitación. No mojar." }
+      ]
+    }
+  },
+  "stores": [
+    { "name": "Planta Industrial Villeta", "address": "Ruta Ypané - Villeta y Arroyo Avay", "phone": "+595 981 111 222", "hours": "Lun-Vie 07:30-17:00 / Sáb 07:30-12:00" },
+    { "name": "Villamorra Shopping", "address": "Asunción", "hours": "Lun-Sáb 09:00-21:00 / Dom 11:00-21:00" },
+    { "name": "Paseo La Galería", "address": "Asunción", "hours": "Lun-Sáb 09:00-21:00 / Dom 11:00-21:00" },
+    { "name": "Fuente Shopping", "address": "Asunción", "hours": "Lun-Sáb 09:00-21:00 / Dom 11:00-21:00" },
+    { "name": "Lillo 2779", "address": "Asunción Centro" },
+    { "name": "Fernando de la Mora" },
+    { "name": "Luisito (Ñemby)" },
+    { "name": "Saldos Mariano", "address": "Mariano Roque Alonso" },
+    { "name": "Ciudad del Este" },
+    { "name": "Encarnación" },
+    { "name": "Caaguazú" },
+    { "name": "Santa Rosa" },
+    { "name": "Filadelfia (Chaco)" }
+  ],
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "question": "¿Qué medidas de colchones fabrican?", "answer": "Fabricamos todas las medidas estándar: 1 plaza (80x190), 1 plaza y media (100x190), 2 plazas (140x190), Queen (160x200), King (180x200), Super King (200x200). Medidas especiales a pedido (5-10 días hábiles)." },
+      { "question": "¿Cómo elijo la firmeza correcta?", "answer": "Menos de 70kg: media. 70-100kg: media-firme. Más de 100kg o columna: firme. De costado: adaptable (Duo Confort)." },
+      { "question": "¿Resorte o espuma?", "answer": "Resorte: soporte, ventilación, durabilidad. Espuma: económico o viscoelástica. Depende de preferencia y peso." },
+      { "question": "¿Cuánto dura la garantía?", "answer": "Esencial: 2 años. Confort: 3 años. Premium (Titanium): 5 años. Ortopédico: 6 años." },
+      { "question": "¿Hacen envíos a todo el país?", "answer": "Sí. Asunción/Metropolitana: 24-72h. Gratis desde Gs. 1.000.000. Interior: 3-7 días con costo según zona." },
+      { "question": "¿Se llevan mi colchón viejo?", "answer": "Sí, sin costo el mismo día de entrega en compras de colchones nuevos." },
+      { "question": "¿En cuántas cuotas puedo pagar?", "answer": "Hasta 18 cuotas sin interés. Aceptamos todas las tarjetas y transferencia bancaria." },
+      { "question": "¿Cómo cuido mi colchón?", "answer": "Rotar cada 3 meses, usar protector impermeable, ventilar la habitación. Cambiar cada 7-10 años." },
+      { "question": "¿Dónde están las tiendas?", "answer": "7 tiendas en Asunción y Central + 6 centros logísticos en el interior. Ver página Tiendas." },
+      { "question": "¿Puedo probar el colchón en tienda?", "answer": "Sí, tenemos exhibición de los más vendidos. Te recomendamos acostarte 10 minutos." },
+      { "question": "¿Tienen servicio técnico?", "answer": "Sí. Línea 0981 111 222. Evaluación y reparación dentro del período de garantía." }
+    ]
+  }
+}
