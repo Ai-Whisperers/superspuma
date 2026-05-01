@@ -84,8 +84,10 @@
       "items": [
         { "title": "49 años fabricando", "description": "Fundada el 24 de julio de 1976 en Villeta, Paraguay." },
         { "title": "200+ colaboradores", "description": "Equipo paraguayo comprometido con la calidad." },
-        { "title": "Líderes regionales", "description": "Innovación en bienestar y descanso a nivel regional." },
-        { "title": "Hecho en Paraguay", "description": "Fabricación nacional que compite con cualquier marca regional." }
+        { "title": "550 unidades/día", "description": "Capacidad de producción diaria en nuestra planta de 7 hectáreas." },
+        { "title": "Flota propia", "description": "40 vehículos para entregas en todo el país." },
+        { "title": "Filial Argentina", "description": "Presencia en Resistencia, Chaco desde hace 21 años. 4.000 sommiers/mes." },
+        { "title": "2.300+ clientes mayoristas", "description": "Distribución en Bristol, Electroban, Misionera, Artaza y más." }
       ]
     },
     "comparison": {
@@ -124,6 +126,13 @@
         { "number": 4, "title": "Disfrutá tu descanso", "description": "Con certificado de garantía y soporte técnico.", "icon": "Moon", "duration": "2 a 6 años de garantía" }
       ]
     },
+    "springTech": {
+      "title": "Nuestra tecnología de resortes",
+      "types": [
+        { "name": "Bonell", "description": "Resortes unidos entre sí por hilos de acero. Sistema clásico e interconectado que ofrece soporte uniforme y durabilidad.", "image": "/superspuma/images/icons/resorte-bonell.png" },
+        { "name": "Pocket", "description": "Cada muelle trabaja de forma individual. Mejor aislamiento de movimiento — cada resorte se comprime sin afectar a los vecinos. Ideal para parejas.", "image": "/superspuma/images/icons/resorte-pocket.png" }
+      ]
+    },
     "testimonials": {
       "title": "Clientes que duermen mejor",
       "items": [
@@ -152,19 +161,19 @@
     }
   },
   "stores": [
-    { "name": "Planta Industrial Villeta", "address": "Ruta Ypané - Villeta y Arroyo Avay", "phone": "+595 981 111 222", "hours": "Lun-Vie 07:30-17:00 / Sáb 07:30-12:00" },
-    { "name": "Villamorra Shopping", "address": "Asunción", "hours": "Lun-Sáb 09:00-21:00 / Dom 11:00-21:00" },
-    { "name": "Paseo La Galería", "address": "Asunción", "hours": "Lun-Sáb 09:00-21:00 / Dom 11:00-21:00" },
-    { "name": "Fuente Shopping", "address": "Asunción", "hours": "Lun-Sáb 09:00-21:00 / Dom 11:00-21:00" },
-    { "name": "Lillo 2779", "address": "Asunción Centro" },
-    { "name": "Fernando de la Mora" },
-    { "name": "Luisito (Ñemby)" },
-    { "name": "Saldos Mariano", "address": "Mariano Roque Alonso" },
-    { "name": "Ciudad del Este" },
-    { "name": "Encarnación" },
-    { "name": "Caaguazú" },
-    { "name": "Santa Rosa" },
-    { "name": "Filadelfia (Chaco)" }
+    { "name": "Planta Industrial Villeta", "type": "Fábrica + Showroom", "address": "Ruta Ypané - Villeta y Arroyo Avay", "phone": "+595 981 111 222", "hours": "Lun-Vie 07:30-17:00, Sáb 07:30-12:00", "lat": -25.5073, "lng": -57.5808, "maps": "https://maps.google.com/?q=Superspuma+Villeta+Paraguay" },
+    { "name": "Shopping Villamorra", "type": "Tienda en Mall", "address": "Villamorra Shopping, Asunción", "hours": "Lun-Sáb 09:00-21:00, Dom 11:00-21:00", "lat": -25.2900, "lng": -57.5750 },
+    { "name": "Paseo La Galería", "type": "Tienda en Mall", "address": "Paseo La Galería, Asunción", "hours": "Lun-Jue 10:00-21:00, Vie-Sáb 10:00-22:00, Dom 10:00-21:00", "lat": -25.2850, "lng": -57.5830 },
+    { "name": "Mariano Roque Alonso", "type": "Tienda", "address": "Mariano Roque Alonso", "hours": "Lun-Vie 07:30-17:00, Sáb 07:30-12:00", "lat": -25.2100, "lng": -57.5320 },
+    { "name": "Fernando de la Mora", "type": "Tienda", "address": "Fernando de la Mora", "hours": "Lun-Vie 07:30-17:00, Sáb 07:30-12:00", "lat": -25.3250, "lng": -57.5600 },
+    { "name": "Terminal (Asunción)", "type": "Tienda", "address": "Asunción (Terminal)", "hours": "Lun-Vie 08:00-17:30, Sáb 08:30-12:00", "lat": -25.2810, "lng": -57.6360 },
+    { "name": "Saldos Mariano", "type": "Outlet", "address": "Mariano Roque Alonso", "hours": "Lun-Vie 07:30-17:00, Sáb 07:30-12:00", "lat": -25.2100, "lng": -57.5340 },
+    { "name": "Luisito (Ñemby)", "type": "Distribución" },
+    { "name": "Ciudad del Este", "type": "Centro de Distribución" },
+    { "name": "Encarnación", "type": "Centro de Distribución" },
+    { "name": "Caaguazú", "type": "Centro de Distribución" },
+    { "name": "Santa Rosa", "type": "Centro de Distribución" },
+    { "name": "Filadelfia (Chaco)", "type": "Centro de Distribución" }
   ],
   "faq": {
     "title": "Preguntas frecuentes",

@@ -24,13 +24,25 @@ export default function NosotrosPage() {
           <h2 className="text-2xl font-bold mb-4">Nuestra historia</h2>
           <div className="space-y-4 text-gray-700">
             <p>En 1976, una familia paraguaya apostó por fabricar colchones de calidad en un mercado dominado por la importación. Empezamos con un taller pequeño en Villeta con la convicción de que Paraguay podía competir en calidad con cualquier marca regional.</p>
-            <p>Casi cinco décadas después seguimos fabricando acá, sobre la Ruta Ypané y Arroyo Avay. Nuestra planta abastece las 5 tiendas propias y una red de revendedores oficiales en todo el país (Bristol, Electroban, Misionera, Artaza Hermanos, Universo, Inverfin, Big Center, ContiMarket, entre otros).</p>
-            <p>En estos años fabricamos más de un millón de colchones. Nuestros clientes nos vuelven a elegir para el cuarto de los hijos, para el traslado, para el abuelo. Eso es lo que nos mantiene — saber que cuando alguien piensa en descansar bien, piensa en Superspuma.</p>
+            <p>Casi cinco décadas después seguimos fabricando acá, sobre la Ruta Ypané y Arroyo Avay. Nuestra planta de 7 hectáreas abastece 7 tiendas propias, 6 centros logísticos en el interior, y una red de 2.300 clientes mayoristas en todo el país (Bristol, Electroban, Misionera, Artaza Hermanos, Universo, Inverfin, Big Center, ContiMarket, entre otros).</p>
+            <p>En estos años fabricamos más de un millón de colchones. Producimos 550 unidades por día entre colchones y bases. Contamos con una flota de 40 vehículos propios y un almacén central de 5.500 m³.</p>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-{[{v:"+49",l:"Años"},{v:"+200",l:"Colaboradores"},{v:"19",l:"Modelos"},{v:"13",l:"Puntos de venta"}].map((s: any, i: number) => (
+        <div className="bg-[#F8F9FA] rounded-xl p-8 mb-8">
+          <h2 className="text-2xl font-bold mb-4">Filial Argentina</h2>
+          <div className="space-y-4 text-gray-700">
+            <p>Presentes en el mercado argentino hace 21 años en la ciudad de Resistencia, Chaco, con un equipo de 30 colaboradores que producen mensualmente 4.000 unidades de sommiers, atendiendo tanto a clientes mayoristas de la provincia como de Corrientes (Capital).</p>
+          </div>
+        </div>
+
+        <div className="bg-[#F8F9FA] rounded-xl p-8 mb-8">
+          <h2 className="text-2xl font-bold mb-4">Apoyo estratégico</h2>
+          <p className="text-gray-700">Desde 2021 trabajamos con la Fundación Don Cabral, una de las principales escuelas de negocios a nivel mundial, para el desarrollo de un plan estratégico que fortalezca la empresa a nivel local y su estructura de recursos humanos.</p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+{[{v:"+49",l:"Años en el mercado"},{v:"+200",l:"Colaboradores"},{v:"550/día",l:"Unidades producidas"},{v:"40",l:"Vehículos propios"},{v:"21 años",l:"Filial Argentina"},{v:"2.300+",l:"Clientes mayoristas"}].map((s: any, i: number) => (
             <div key={i} className="bg-[#0F1624] text-white rounded-xl p-6 text-center">
               <div className="text-3xl font-bold">{s.v}</div>
               <div className="text-sm text-blue-200 mt-1">{s.l}</div>
