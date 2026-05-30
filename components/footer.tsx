@@ -23,7 +23,9 @@ export function Footer({ businessName }: { businessName?: string }) {
             <div className="flex flex-col gap-2 text-sm">
               <Link href="/tienda?cat=Resorte" className="text-white/80 hover:text-white">Línea Resorte</Link>
               <Link href="/tienda?cat=Espuma" className="text-white/80 hover:text-white">Línea Espuma</Link>
+              <Link href="/maestre" className="text-white/80 hover:text-white">Línea Maestre ✦</Link>
               <Link href="/tienda?cat=Accesorios" className="text-white/80 hover:text-white">Accesorios</Link>
+              <Link href="/promociones" className="text-white/80 hover:text-white">Promociones</Link>
               <Link href="/tienda" className="text-white/80 hover:text-white">Ver Todo</Link>
             </div>
           </div>
@@ -32,9 +34,10 @@ export function Footer({ businessName }: { businessName?: string }) {
             <div className="flex flex-col gap-2 text-sm">
               <Link href="/nosotros" className="text-white/80 hover:text-white">Nosotros</Link>
               <Link href="/tiendas" className="text-white/80 hover:text-white">Tiendas</Link>
+              <Link href="/blog" className="text-white/80 hover:text-white">Blog y Guías</Link>
               <Link href="/garantia" className="text-white/80 hover:text-white">Garantía</Link>
-              <Link href="/guias" className="text-white/80 hover:text-white">Guías de Compra</Link>
               <Link href="/faq" className="text-white/80 hover:text-white">Preguntas Frecuentes</Link>
+              <Link href="/trabaja-con-nosotros" className="text-white/80 hover:text-white">Trabajá con Nosotros</Link>
               <Link href="/privacidad" className="text-white/80 hover:text-white">Privacidad</Link>
               <Link href="/terminos" className="text-white/80 hover:text-white">Términos</Link>
             </div>

@@ -176,7 +176,7 @@
           "slug": "serrat",
           "category": "Resorte",
           "price": "Desde Gs. 1.600.000",
-          "image": "/images/products/serrat-e1721836318754.webp",
+          "image": "/images/products/serrat-main.webp",
           "description": "Pillow Top elegante con resortes Bonell que brindan soporte firme y acogedor. Diseño exclusivo en tonos marrones. La combinación ideal de estilo y descanso reparador.",
           "specs": {
             "diseno": "Pillow Top",
@@ -185,7 +185,13 @@
             "altura": "64 cm",
             "garantia": "3 años",
             "colores": "Marrón"
-          }
+          },
+          "gallery": [
+            "/images/products/serrat-2.webp",
+            "/images/products/serrat-3.webp",
+            "/images/products/serrat-4.webp",
+            "/images/products/serrat-5.webp"
+          ]
         },
         {
           "name": "Delta Soft",
@@ -336,7 +342,7 @@
           "slug": "ortopedico",
           "category": "Espuma",
           "price": "Desde Gs. 1.200.000",
-          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "image": "/images/products/ortopedico.webp",
           "description": "Espuma de alta densidad con soporte ortopédico certificado. Recomendado por profesionales de la salud para problemas de columna. Firmeza justa donde más la necesitas.",
           "specs": {
             "diseno": "Plano Firme",
@@ -345,14 +351,17 @@
             "altura": "30 cm",
             "garantia": "3 años",
             "colores": "Blanco"
-          }
+          },
+          "gallery": [
+            "/images/products/ortopedico-2.webp"
+          ]
         },
         {
           "name": "Duo Confort",
           "slug": "duo-confort",
           "category": "Espuma",
           "price": "Desde Gs. 1.350.000",
-          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "image": "/images/products/duo-confort.webp",
           "description": "Dos caras, dos niveles de firmeza. Espuma de alta densidad con lado suave y lado firme. Soporta hasta 100 kg por lado con 4 años de garantía.",
           "specs": {
             "diseno": "Doble Cara",
@@ -361,14 +370,17 @@
             "altura": "32 cm",
             "garantia": "4 años",
             "colores": "Blanco"
-          }
+          },
+          "gallery": [
+            "/images/products/duo-confort-2.webp"
+          ]
         },
         {
           "name": "Serena",
           "slug": "serena",
           "category": "Espuma",
           "price": "Desde Gs. 1.100.000",
-          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "image": "/images/products/serena.webp",
           "description": "Suavidad y soporte en perfecta armonía. Espuma de alta densidad que se adapta a tu cuerpo sin ceder. 4 años de garantía respaldan su durabilidad.",
           "specs": {
             "diseno": "Plano",
@@ -377,14 +389,17 @@
             "altura": "30 cm",
             "garantia": "4 años",
             "colores": "Blanco"
-          }
+          },
+          "gallery": [
+            "/images/products/serena-2.webp"
+          ]
         },
         {
           "name": "Golden",
           "slug": "golden",
           "category": "Espuma",
           "price": "Desde Gs. 900.000",
-          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "image": "/images/products/golden.webp",
           "description": "Calidad premium en espuma. Alta densidad con acabado dorado elegante. El colchón ideal para quienes prefieren la firmeza uniforme de la espuma sin resortes.",
           "specs": {
             "diseno": "Plano",
@@ -393,14 +408,17 @@
             "altura": "28 cm",
             "garantia": "2 años",
             "colores": "Blanco / Dorado"
-          }
+          },
+          "gallery": [
+            "/images/products/golden-2.webp"
+          ]
         },
         {
           "name": "Luna Soft",
           "slug": "luna-soft",
           "category": "Espuma",
           "price": "Desde Gs. 700.000",
-          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "image": "/images/products/luna-soft.webp",
           "description": "Suavidad de luna. Espuma de densidad media ideal para quienes buscan un colchón más mullido. Liviano, fácil de mover, perfecto para habitaciones de invitados.",
           "specs": {
             "diseno": "Plano",
@@ -416,7 +434,7 @@
           "slug": "super-kids",
           "category": "Espuma",
           "price": "Desde Gs. 550.000",
-          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "image": "/images/products/super-kids.webp",
           "description": "Espuma especial para los más pequeños. Firmeza adecuada para el desarrollo infantil, sin resortes para mayor seguridad. Disponible en tamaños individuales.",
           "specs": {
             "diseno": "Plano",
@@ -425,7 +443,10 @@
             "altura": "20 cm",
             "garantia": "1 año",
             "colores": "Blanco / Rosa / Celeste"
-          }
+          },
+          "gallery": [
+            "/images/products/super-kids-2.webp"
+          ]
         },
         {
           "name": "Almohada Hipersoft",
@@ -522,7 +543,7 @@
           "slug": "base-box-baul",
           "category": "Accesorios",
           "price": "Desde Gs. 800.000",
-          "image": "/images/icons/espuma.png",
+          "image": "/images/products/cubrecolchones.webp",
           "description": "Base tapizada con espacio de almacenamiento interno. Eleva tu colchón a la altura ideal mientras aprovechas el espacio para guardar ropa de cama y más. Estructura de madera maciza.",
           "specs": {
             "tipo": "Base",
@@ -537,7 +558,7 @@
           "slug": "almohada-superspuma",
           "category": "Accesorios",
           "price": "Gs. 180.000",
-          "image": "/images/icons/almohada.png",
+          "image": "/images/products/hipersoft.webp",
           "description": "La almohada clásica de Superspuma. Fibra de calidad con el respaldo de la marca líder en descanso. Firmeza media ideal para todas las posiciones de sueño.",
           "specs": {
             "tipo": "Almohada",

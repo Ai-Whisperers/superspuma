@@ -10,10 +10,11 @@ export function Header({ logo }: { logo?: string }) {
   const navItems: NavItem[] = [
     { label: "Inicio", href: "/" },
     { label: "Tienda", href: "/tienda" },
+    { label: "Maestre", href: "/maestre" },
+    { label: "Promos", href: "/promociones" },
+    { label: "Blog", href: "/blog" },
     { label: "Nosotros", href: "/nosotros" },
     { label: "Tiendas", href: "/tiendas" },
-    { label: "Guías", href: "/guias" },
-    { label: "FAQ", href: "/faq" },
     { label: "Contacto", href: "/contacto" },
   ]
 

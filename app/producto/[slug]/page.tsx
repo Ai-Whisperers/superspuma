@@ -5,6 +5,7 @@ import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 import { Bed, ChevronRight, ShieldCheck, Truck, CreditCard, MessageCircle, Check, Star, ArrowLeft } from "lucide-react"
 
 const content = raw as any
@@ -65,13 +66,28 @@ export default async function ProductoPage({ params }: { params: Promise<{ slug:
       <section className="bg-white py-12">
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid gap-12 lg:grid-cols-2">
-            {/* Image */}
-            <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-50">
-              {product.image ? (
-                <Image src={product.image} alt={product.name} fill className="object-contain p-8" sizes="(max-width: 1024px) 100vw, 50vw" priority />
-              ) : (
-                <div className="flex h-full items-center justify-center text-gray-300">
-                  <Bed className="w-32 h-32" />
+            {/* Image + Gallery */}
+            <div>
+              <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-50">
+                {product.image ? (
+                  <Image src={product.image} alt={product.name} fill className="object-contain p-8" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+                ) : (
+                  <div className="flex h-full items-center justify-center text-gray-300">
+                    <Bed className="w-32 h-32" />
+                  </div>
+                )}
+              </div>
+              {/* Gallery thumbnails */}
+              {product.gallery && product.gallery.length > 0 && (
+                <div className="mt-4 flex gap-3 overflow-x-auto pb-2">
+                  <div className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-gray-50 ring-2 ring-[#0F1624]">
+                    <Image src={product.image} alt={product.name} fill className="object-contain p-1" sizes="80px" />
+                  </div>
+                  {product.gallery.map((img: string, i: number) => (
+                    <a key={i} href={img} target="_blank" rel="noopener noreferrer" className="relative w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-gray-50 hover:ring-2 hover:ring-[#3A4A5D] transition-all">
+                      <Image src={img} alt={`${product.name} vista ${i + 2}`} fill className="object-contain p-1" sizes="80px" />
+                    </a>
+                  ))}
                 </div>
               )}
             </div>
