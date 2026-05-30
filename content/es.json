@@ -12,11 +12,11 @@
       "cuitonline / LinkedIn / Facebook (datos corporativos)"
     ]
   },
-  "siteName": "Superspuma",
+  "siteName": "Superspuma Paraguay",
   "business": {
     "name": "Superspuma",
     "legalName": "Superspuma del Paraguay S.A.E.C.A.",
-    "founded": 1976,
+    "founded": "1976",
     "whatsapp": "+595974202025",
     "phone": "+595981111222",
     "email": "info@superspuma.com.py",
@@ -25,7 +25,10 @@
     "linkedin": "superspuma-del-paraguay-saeca",
     "address": "Ruta Ypané - Villeta y Arroyo Avay, Villeta - Central",
     "city": "Villeta",
-    "country": "Paraguay"
+    "country": "Paraguay",
+    "location": "Villeta, Paraguay",
+    "plantSize": "7 hectáreas",
+    "dailyProduction": "550 colchones"
   },
   "home": {
     "seo": {
@@ -38,7 +41,8 @@
       "ctaPrimaryText": "Ver colchones",
       "ctaPrimaryHref": "#catalogo",
       "ctaSecondaryText": "Consultar por WhatsApp",
-      "ctaSecondaryHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20colchones%20Superspuma"
+      "ctaSecondaryHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20colchones%20Superspuma",
+      "image": "/images/banners/slide-20off.webp"
     },
     "trustBadges": {
       "title": "Por qué elegir Superspuma",
@@ -115,146 +119,433 @@
       "categories": [
         "Resorte",
         "Espuma",
-        "Accesorios"
+        "Accesorios",
+        "Maestre"
       ],
       "products": [
         {
           "name": "Titanium",
+          "slug": "titanium",
           "category": "Resorte",
           "price": "Desde Gs. 1.800.000",
-          "description": "Premium con Euro Pillow Top. Resortes Bonell reforzados, tejido antiácaros y hasta 120 kg por lado. 5 años de garantía."
+          "image": "/images/products/titanium.webp",
+          "description": "Nuestro colchón insignia. Euro Pillow Top con resortes Bonell reforzados y tejido antiácaros de última generación. Máximo soporte y confort para un descanso premium que se nota desde la primera noche.",
+          "specs": {
+            "diseno": "Euro Pillow Top",
+            "tecnologia": "Resortes Bonell Reforzados",
+            "soporte": "95 kg por lado",
+            "altura": "66 cm",
+            "garantia": "2 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Imperial",
+          "slug": "imperial",
           "category": "Resorte",
-          "price": "Desde Gs. 2.230.000",
-          "description": "Resortes Bonell con Pillow Top. Descanso regenerador para uso matrimonial. 3 colores disponibles."
+          "price": "Desde Gs. 2.100.000",
+          "image": "/images/products/imperial.webp",
+          "description": "La máxima expresión de confort. Pillow Top con resortes Bonell de alta densidad, soporta hasta 130 kg por lado. Acabados premium para quienes buscan lo mejor en descanso.",
+          "specs": {
+            "diseno": "Pillow Top",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "130 kg por lado",
+            "altura": "69 cm",
+            "garantia": "5 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Harmony",
+          "slug": "harmony",
           "category": "Resorte",
-          "price": "Desde Gs. 1.274.000",
-          "description": "Equilibrio entre soporte y confort. Euro-Top y tejido antiácaros. Uno de nuestros más vendidos."
+          "price": "Desde Gs. 1.500.000",
+          "image": "/images/products/RZ92016-scaled.webp",
+          "description": "Equilibrio perfecto entre suavidad y soporte. Euro Top con resortes Bonell reforzados que se adaptan a tu cuerpo. Ideal para parejas con diferente peso.",
+          "specs": {
+            "diseno": "Euro Top",
+            "tecnologia": "Resortes Bonell Reforzados",
+            "soporte": "100 kg por lado",
+            "altura": "65 cm",
+            "garantia": "3 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Serrat",
+          "slug": "serrat",
           "category": "Resorte",
-          "price": "Desde Gs. 1.150.000",
-          "description": "Resorte con espuma de densidad media en superficie. Firmeza media, tacto suave."
+          "price": "Desde Gs. 1.600.000",
+          "image": "/images/products/serrat-e1721836318754.webp",
+          "description": "Pillow Top elegante con resortes Bonell que brindan soporte firme y acogedor. Diseño exclusivo en tonos marrones. La combinación ideal de estilo y descanso reparador.",
+          "specs": {
+            "diseno": "Pillow Top",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "110 kg por lado",
+            "altura": "64 cm",
+            "garantia": "3 años",
+            "colores": "Marrón"
+          }
         },
         {
           "name": "Delta Soft",
+          "slug": "delta-soft",
           "category": "Resorte",
-          "price": "Desde Gs. 1.050.000",
-          "description": "Resorte con pillow suave para quienes prefieren un tacto mullido."
+          "price": "Desde Gs. 1.400.000",
+          "image": "/images/products/RZ92036-scaled.webp",
+          "description": "Euro Top con resortes Bonell de alta resistencia. Soporta hasta 130 kg por lado con una suavidad que sorprende. Construido para durar años sin perder forma.",
+          "specs": {
+            "diseno": "Euro Top",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "130 kg por lado",
+            "altura": "71 cm",
+            "garantia": "4 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Essential Top",
+          "slug": "essential-top",
           "category": "Resorte",
-          "price": "Desde Gs. 890.000",
-          "description": "La puerta de entrada al resorte Superspuma con Pillow Top."
+          "price": "Desde Gs. 1.100.000",
+          "image": "/images/products/RZ91993-scaled-e1757417906578-500x500.webp",
+          "description": "La entrada perfecta al mundo de los colchones de resorte. Pillow Top con resortes Bonell que brindan soporte confiable a un precio accesible. Calidad Superspuma garantizada.",
+          "specs": {
+            "diseno": "Pillow Top",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "90 kg por lado",
+            "altura": "60 cm",
+            "garantia": "2 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Renovate",
+          "slug": "renovate",
           "category": "Resorte",
-          "price": "Desde Gs. 780.000",
-          "description": "Ideal para reemplazar tu viejo colchón sin gastar de más."
+          "price": "Desde Gs. 1.550.000",
+          "image": "/images/products/renovate_negro.webp",
+          "description": "Diseño moderno con acabado negro elegante. Resortes Bonell con Pillow Top que combinan estilo contemporáneo con el soporte firme que tu espalda necesita.",
+          "specs": {
+            "diseno": "Pillow Top",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "100 kg por lado",
+            "altura": "63 cm",
+            "garantia": "3 años",
+            "colores": "Negro"
+          }
         },
         {
           "name": "Impulse Kids",
+          "slug": "impulse-kids",
           "category": "Resorte",
-          "price": "Desde Gs. 780.000",
-          "description": "Resorte premium para niños. Reversible, antiácaros, diseños rosa y celeste."
+          "price": "Desde Gs. 850.000",
+          "image": "/images/products/impulse-1.webp",
+          "description": "Colchón de resorte diseñado especialmente para niños. Resortes Bonell con la firmeza justa para el crecimiento sano de los más pequeños. Divertidos diseños disponibles.",
+          "specs": {
+            "diseno": "Plano",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "70 kg por lado",
+            "altura": "55 cm",
+            "garantia": "1 año",
+            "colores": "Elefantes / Pelotitas Rosa / Celeste"
+          }
         },
         {
           "name": "Impulse Teens",
+          "slug": "impulse-teens",
           "category": "Resorte",
-          "price": "Desde Gs. 890.000",
-          "description": "Resorte reforzado para adolescentes. Mayor densidad y capacidad de carga."
+          "price": "Desde Gs. 950.000",
+          "image": "/images/products/impulse-1.webp",
+          "description": "Para adolescentes que necesitan un buen descanso. Resortes Bonell con soporte adaptativo para cuerpos en crecimiento. El puente perfecto entre infantil y adulto.",
+          "specs": {
+            "diseno": "Plano",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "80 kg por lado",
+            "altura": "58 cm",
+            "garantia": "1 año",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Pop Kids",
+          "slug": "pop-kids",
           "category": "Resorte",
-          "price": "Desde Gs. 649.000",
-          "description": "Colchón infantil económico con diseños divertidos. Tela Polybrush."
+          "price": "Desde Gs. 750.000",
+          "image": "/images/products/pop_plus_pillow.webp",
+          "description": "Colchón de resorte para los más chiquitos de la casa. Bonell con Pillow Top suave, diseñado con diversión y seguridad. Disponible en colores vibrantes.",
+          "specs": {
+            "diseno": "Pillow Top",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "70 kg por lado",
+            "altura": "55 cm",
+            "garantia": "1 año",
+            "colores": "Rosa / Celeste"
+          }
         },
         {
           "name": "Pop Plus",
+          "slug": "pop-plus",
           "category": "Resorte",
-          "price": "Desde Gs. 850.000",
-          "description": "Pop reforzado para uso adulto — mayor capacidad."
+          "price": "Desde Gs. 1.200.000",
+          "image": "/images/products/pop_plus_pillow.webp",
+          "description": "Pop Plus Pillow: la versión mejorada del Pop. Pillow Top extra acolchado con resortes Bonell para un confort superior. La mejor relación calidad-precio de la línea.",
+          "specs": {
+            "diseno": "Pillow Top",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "95 kg por lado",
+            "altura": "62 cm",
+            "garantia": "2 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Pop Teen",
+          "slug": "pop-teen",
           "category": "Resorte",
-          "price": "Desde Gs. 780.000",
-          "description": "Pop para adolescentes — precio accesible y buena durabilidad."
+          "price": "Desde Gs. 850.000",
+          "image": "/images/products/pop_plus_pillow.webp",
+          "description": "Diseñado para adolescentes activos. Resortes Bonell con Pillow Top que brinda el soporte necesario sin sacrificar suavidad. Tamaño ideal para habitaciones juveniles.",
+          "specs": {
+            "diseno": "Pillow Top",
+            "tecnologia": "Resortes Bonell",
+            "soporte": "80 kg por lado",
+            "altura": "58 cm",
+            "garantia": "1 año",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Superteen",
+          "slug": "superteen",
           "category": "Resorte",
-          "price": "Desde Gs. 980.000",
-          "description": "Línea superior juvenil. Mejor acabado y mayor densidad."
+          "price": "Desde Gs. 1.000.000",
+          "image": "/images/products/RZ92291-scaled.webp",
+          "description": "El colchón definitivo para teenagers. Resortes Bonell reforzados con Pillow Top que soporta el ritmo de vida juvenil. Transición perfecta al colchón adulto.",
+          "specs": {
+            "diseno": "Pillow Top",
+            "tecnologia": "Resortes Bonell Reforzados",
+            "soporte": "90 kg por lado",
+            "altura": "60 cm",
+            "garantia": "2 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Ortopédico",
+          "slug": "ortopedico",
           "category": "Espuma",
-          "price": "Desde Gs. 1.290.000",
-          "description": "Espuma alta densidad 45. Hasta 140 kg por lado. 6 años de garantía. Para quienes priorizan firmeza."
+          "price": "Desde Gs. 1.200.000",
+          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "description": "Espuma de alta densidad con soporte ortopédico certificado. Recomendado por profesionales de la salud para problemas de columna. Firmeza justa donde más la necesitas.",
+          "specs": {
+            "diseno": "Plano Firme",
+            "tecnologia": "Espuma de Alta Densidad",
+            "soporte": "110 kg por lado",
+            "altura": "30 cm",
+            "garantia": "3 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Duo Confort",
+          "slug": "duo-confort",
           "category": "Espuma",
-          "price": "Desde Gs. 980.000",
-          "description": "Viscoelástica adaptable (memory foam). Alivia puntos de presión y mejora la circulación."
+          "price": "Desde Gs. 1.350.000",
+          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "description": "Dos caras, dos niveles de firmeza. Espuma de alta densidad con lado suave y lado firme. Soporta hasta 100 kg por lado con 4 años de garantía.",
+          "specs": {
+            "diseno": "Doble Cara",
+            "tecnologia": "Espuma de Alta Densidad",
+            "soporte": "100 kg por lado",
+            "altura": "32 cm",
+            "garantia": "4 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Serena",
+          "slug": "serena",
           "category": "Espuma",
-          "price": "Desde Gs. 850.000",
-          "description": "Espuma de alta densidad con buen confort y recuperación."
+          "price": "Desde Gs. 1.100.000",
+          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "description": "Suavidad y soporte en perfecta armonía. Espuma de alta densidad que se adapta a tu cuerpo sin ceder. 4 años de garantía respaldan su durabilidad.",
+          "specs": {
+            "diseno": "Plano",
+            "tecnologia": "Espuma de Alta Densidad",
+            "soporte": "100 kg por lado",
+            "altura": "30 cm",
+            "garantia": "4 años",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Golden",
+          "slug": "golden",
           "category": "Espuma",
-          "price": "Desde Gs. 696.000",
-          "description": "Espuma reversible con Pillow Top simple. Excelente relación calidad/precio."
+          "price": "Desde Gs. 900.000",
+          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "description": "Calidad premium en espuma. Alta densidad con acabado dorado elegante. El colchón ideal para quienes prefieren la firmeza uniforme de la espuma sin resortes.",
+          "specs": {
+            "diseno": "Plano",
+            "tecnologia": "Espuma de Alta Densidad",
+            "soporte": "90 kg por lado",
+            "altura": "28 cm",
+            "garantia": "2 años",
+            "colores": "Blanco / Dorado"
+          }
         },
         {
           "name": "Luna Soft",
+          "slug": "luna-soft",
           "category": "Espuma",
-          "price": "Desde Gs. 500.000",
-          "description": "Espuma de densidad media. Superficie suave — ideal para invitados o uso ocasional."
+          "price": "Desde Gs. 700.000",
+          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "description": "Suavidad de luna. Espuma de densidad media ideal para quienes buscan un colchón más mullido. Liviano, fácil de mover, perfecto para habitaciones de invitados.",
+          "specs": {
+            "diseno": "Plano",
+            "tecnologia": "Espuma Media Densidad",
+            "soporte": "60 kg por lado",
+            "altura": "25 cm",
+            "garantia": "1 año",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Super Kids",
+          "slug": "super-kids",
           "category": "Espuma",
-          "price": "Desde Gs. 420.000",
-          "description": "Espuma infantil liviana. Perfecto para cunas de transición."
+          "price": "Desde Gs. 550.000",
+          "image": "/images/products/WhatsApp-Image-2025-08-12-at-12.41.35.webp",
+          "description": "Espuma especial para los más pequeños. Firmeza adecuada para el desarrollo infantil, sin resortes para mayor seguridad. Disponible en tamaños individuales.",
+          "specs": {
+            "diseno": "Plano",
+            "tecnologia": "Espuma Media Densidad",
+            "soporte": "50 kg por lado",
+            "altura": "20 cm",
+            "garantia": "1 año",
+            "colores": "Blanco / Rosa / Celeste"
+          }
         },
         {
-          "name": "Base Box Baúl",
+          "name": "Almohada Hipersoft",
+          "slug": "almohada-hipersoft",
           "category": "Accesorios",
-          "price": "Desde Gs. 890.000",
-          "description": "Sommier con tapa rebatible y espacio de guardado. Todas las medidas."
+          "price": "Gs. 250.000",
+          "image": "/images/icons/almohada.png",
+          "description": "Almohada de microfibra con suavidad extrema. Relleno hipoalergénico que mantiene su forma noche tras noche. El complemento perfecto para tu colchón Superspuma.",
+          "specs": {
+            "tipo": "Almohada",
+            "material": "Microfibra Hipersoft",
+            "relleno": "Hipoalergénico",
+            "garantia": "6 meses",
+            "colores": "Blanco"
+          }
         },
         {
-          "name": "Protector Impermeable",
+          "name": "Almohada Silicon",
+          "slug": "almohada-silicon",
           "category": "Accesorios",
-          "price": "Desde Gs. 120.000",
-          "description": "Impermeable y transpirable. Protege tu colchón sin cambiar la sensación."
+          "price": "Gs. 200.000",
+          "image": "/images/icons/almohada.png",
+          "description": "Almohada de fibra de silicona con soporte cervical óptimo. Se adapta a la forma de tu cuello para un descanso sin tensiones. Lavable y durable.",
+          "specs": {
+            "tipo": "Almohada",
+            "material": "Fibra de Silicona",
+            "relleno": "Fibra hueca siliconada",
+            "garantia": "6 meses",
+            "colores": "Blanco"
+          }
+        },
+        {
+          "name": "Almohada Viscoelástica",
+          "slug": "almohada-viscoelastica",
+          "category": "Accesorios",
+          "price": "Gs. 320.000",
+          "image": "/images/icons/almohada.png",
+          "description": "Almohada de memoria viscoelástica que se moldea a tu cabeza y cuello. Alivia puntos de presión y mejora la alineación cervical. La elección ergonómica por excelencia.",
+          "specs": {
+            "tipo": "Almohada",
+            "material": "Espuma Viscoelástica",
+            "relleno": "Memory Foam",
+            "garantia": "1 año",
+            "colores": "Blanco"
+          }
+        },
+        {
+          "name": "Almohada Viscosweet",
+          "slug": "almohada-viscosweet",
+          "category": "Accesorios",
+          "price": "Gs. 280.000",
+          "image": "/images/icons/almohada.png",
+          "description": "La dulzura del memory foam en una almohada. Viscoelástica con gel refrescante para noches más frescas. Suave al tacto, firme donde se necesita.",
+          "specs": {
+            "tipo": "Almohada",
+            "material": "Viscoelástica con Gel",
+            "relleno": "Memory Foam + Gel Cooling",
+            "garantia": "1 año",
+            "colores": "Blanco"
+          }
         },
         {
           "name": "Cubre Colchón",
+          "slug": "cubre-colchon",
           "category": "Accesorios",
-          "price": "Desde Gs. 95.000",
-          "description": "Cubre colchón acolchado con elástico en todos los tamaños."
+          "price": "Gs. 350.000",
+          "image": "/images/icons/espuma.png",
+          "description": "Protector acolchado que extiende la vida útil de tu colchón. Tejido suave con relleno que agrega una capa extra de confort. Fácil de lavar y mantener.",
+          "specs": {
+            "tipo": "Cubrecolchón",
+            "material": "Tejido acolchado",
+            "relleno": "Fibra hipoalergénica",
+            "garantia": "6 meses",
+            "colores": "Blanco"
+          }
+        },
+        {
+          "name": "Protector Impermeable",
+          "slug": "protector-impermeable",
+          "category": "Accesorios",
+          "price": "Gs. 280.000",
+          "image": "/images/icons/espuma.png",
+          "description": "Protector impermeable que resguarda tu colchón de líquidos, ácaros y bacterias. Membrana transpirable que no altera la sensación del colchón. Esencial para niños.",
+          "specs": {
+            "tipo": "Protector",
+            "material": "Membrana impermeable transpirable",
+            "relleno": "N/A",
+            "garantia": "1 año",
+            "colores": "Blanco"
+          }
+        },
+        {
+          "name": "Base Box Baúl",
+          "slug": "base-box-baul",
+          "category": "Accesorios",
+          "price": "Desde Gs. 800.000",
+          "image": "/images/icons/espuma.png",
+          "description": "Base tapizada con espacio de almacenamiento interno. Eleva tu colchón a la altura ideal mientras aprovechas el espacio para guardar ropa de cama y más. Estructura de madera maciza.",
+          "specs": {
+            "tipo": "Base",
+            "material": "Madera tapizada",
+            "almacenamiento": "Interior tipo baúl",
+            "garantia": "1 año",
+            "colores": "Blanco / Beige"
+          }
         },
         {
           "name": "Almohada Superspuma",
+          "slug": "almohada-superspuma",
           "category": "Accesorios",
-          "price": "Desde Gs. 65.000",
-          "description": "Almohadas de fibra siliconada o espuma. Varias firmezas."
+          "price": "Gs. 180.000",
+          "image": "/images/icons/almohada.png",
+          "description": "La almohada clásica de Superspuma. Fibra de calidad con el respaldo de la marca líder en descanso. Firmeza media ideal para todas las posiciones de sueño.",
+          "specs": {
+            "tipo": "Almohada",
+            "material": "Fibra de poliéster",
+            "relleno": "Fibra hueca",
+            "garantia": "3 meses",
+            "colores": "Blanco"
+          }
         }
       ]
     },
@@ -378,34 +669,28 @@
       "lightbox": true,
       "images": [
         {
-          "src": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Dormitorio con colchón premium y sommier",
-          "category": "Ambientes"
+          "src": "/images/banners/conti.webp",
+          "alt": "Línea Conti de Superspuma"
         },
         {
-          "src": "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Colchón con Euro Pillow Top en detalle",
-          "category": "Producto"
+          "src": "/images/banners/kids-banner.webp",
+          "alt": "Colchones para niños"
         },
         {
-          "src": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Habitación principal con base de guardado",
-          "category": "Ambientes"
+          "src": "/images/banners/maestre-banner.webp",
+          "alt": "Línea Maestre"
         },
         {
-          "src": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Cama con almohadas Superspuma",
-          "category": "Ambientes"
+          "src": "/images/banners/novedades-banner.webp",
+          "alt": "Novedades Superspuma"
         },
         {
-          "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Dormitorio matrimonial amplio",
-          "category": "Ambientes"
+          "src": "/images/banners/nosotros-medio.webp",
+          "alt": "Planta industrial Superspuma"
         },
         {
-          "src": "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Detalle de resortes y espuma del colchón",
-          "category": "Producto"
+          "src": "/images/products/titanium.webp",
+          "alt": "Colchón Titanium"
         }
       ]
     },
@@ -721,189 +1006,81 @@
           "description": "Cuotas sin interés en todas las tarjetas. Descuentos por transferencia. Promociones por temporada. Descansar bien no debería ser un lujo."
         }
       ]
-    }
+    },
+    "title": "Sobre Superspuma",
+    "subtitle": "Más de 48 años fabricando el descanso de Paraguay",
+    "history": "Fundada en 1976 en Fernando de la Mora, Superspuma creció hasta convertirse en el fabricante de colchones más importante del Paraguay. Nuestra planta industrial en Villeta cuenta con 7 hectáreas de infraestructura dedicada a la producción de colchones de la más alta calidad.",
+    "mission": "Brindar el mejor descanso a cada hogar paraguayo mediante productos de calidad superior, innovación constante y un compromiso inquebrantable con la satisfacción del cliente.",
+    "stats": [
+      {
+        "number": "550+",
+        "label": "Colchones producidos por día"
+      },
+      {
+        "number": "15",
+        "label": "Tiendas propias"
+      },
+      {
+        "number": "2.300+",
+        "label": "Clientes mayoristas"
+      },
+      {
+        "number": "40",
+        "label": "Vehículos de entrega"
+      },
+      {
+        "number": "5.500 m³",
+        "label": "Depósito industrial"
+      },
+      {
+        "number": "48",
+        "label": "Años de experiencia"
+      }
+    ],
+    "filialArgentina": "Contamos con filial en Argentina desde hace 21 años, ubicada en Resistencia, Chaco. Con un equipo de 30 personas, producimos más de 4.000 unidades mensuales.",
+    "fundacion": "Desde 2021, trabajamos con la Fundación Don Cabral en un plan estratégico de crecimiento y mejora continua, reforzando nuestro compromiso con la excelencia.",
+    "image": "/images/banners/nosotros-medio.webp"
   },
   "tiendas": {
-    "seo": {
-      "title": "Tiendas Superspuma — 5 sucursales en Asunción y Central",
-      "description": "Probá tu próximo colchón en cualquiera de nuestras 5 tiendas. Mariano Roque Alonso, Fernando de la Mora, Terminal, Shopping Villamorra y Paseo La Galería."
-    },
-    "hero": {
-      "headline": "Nuestras tiendas",
-      "subheadline": "Un colchón se elige acostándose. Por eso tenemos 5 ubicaciones donde podés probar los modelos en persona."
-    },
-    "stores": {
-      "title": "Tiendas y puntos de venta",
-      "subtitle": "Red propia en todo el Paraguay. Horarios a Paraguay (GMT-3).",
-      "tiers": [
-        {
-          "id": "villamorra",
-          "name": "Villamorra Shopping",
-          "badge": "Horario extendido",
-          "highlighted": true,
-          "description": "Villamorra Shopping, Planta Baja, Asunción. Tel: (021) 606 084.",
-          "included": [
-            "Lunes a Sábado: 09:00 - 21:00",
-            "Domingo y feriados: 11:00 - 21:00",
-            "Estacionamiento del shopping",
-            "Modelos premium en exhibición"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Villamorra+Shopping+Asunci%C3%B3n"
-        },
-        {
-          "id": "paseo-galeria",
-          "name": "Paseo La Galería",
-          "badge": "Horario extendido",
-          "description": "Avda. Aviadores del Chaco y calle Sta. Teresa, Asunción. Tel: (0985) 629 053.",
-          "included": [
-            "Lunes a Jueves: 10:00 - 21:00",
-            "Viernes y Sábado: 10:00 - 22:00",
-            "Domingo y feriados: 10:00 - 21:00",
-            "Zona Aviadores del Chaco"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Paseo+La+Galer%C3%ADa+Asunci%C3%B3n"
-        },
-        {
-          "id": "fuente",
-          "name": "Fuente Shopping",
-          "description": "Fuente Shopping, Salemma, 1er piso, Asunción. Tel: (0985) 629 094.",
-          "included": [
-            "Lunes a Sábado: 09:00 - 21:00",
-            "Domingo y feriados: 10:00 - 21:00",
-            "Dentro de Supermercado Salemma"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Fuente+Shopping+Asunci%C3%B3n"
-        },
-        {
-          "id": "lillo",
-          "name": "Lillo (Asunción Centro)",
-          "description": "Lillo 2779 entre Denis Roa y Coronel Cabrera, Asunción. Tel: (021) 601 702.",
-          "included": [
-            "Lunes a Viernes: 08:00 - 17:30",
-            "Sábado: 08:00 - 12:00",
-            "Zona céntrica — cerca de Terminal",
-            "Showroom de resorte y espuma"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Lillo+2779+Asunci%C3%B3n"
-        },
-        {
-          "id": "fdlm",
-          "name": "Fernando de la Mora",
-          "description": "R.I. 9 Capitán Bado 1158 y Las Residentas. Tel: (021) 501 036.",
-          "included": [
-            "Lunes a Viernes: 07:30 - 17:00",
-            "Sábado: 07:30 - 12:00",
-            "Domingo: Cerrado",
-            "Centro logístico — entrega inmediata"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Fernando+de+la+Mora+Capit%C3%A1n+Bado"
-        },
-        {
-          "id": "luisito",
-          "name": "Luisito (Ñemby)",
-          "description": "Avda. Manuel Ortiz Guerrero, Ñemby. Tel: (0985) 629 034.",
-          "included": [
-            "Lunes a Viernes: 08:00 - 17:00",
-            "Sábado: 08:00 - 12:00"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Luisito+%C3%91emby"
-        },
-        {
-          "id": "saldos-mariano",
-          "name": "Saldos Mariano (Outlet)",
-          "badge": "Outlet",
-          "description": "Cañada del Carmen y Corrales, Mariano Roque Alonso. Tel: (021) 750 925.",
-          "included": [
-            "Lunes a Viernes: 07:30 - 17:00",
-            "Sábado: 07:30 - 12:00",
-            "Productos con descuento especial",
-            "Últimas unidades y liquidaciones"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Saldos+Mariano+Roque+Alonso"
-        }
-      ]
-    },
-    "logistics": {
-      "title": "Centros logísticos en el interior",
-      "subtitle": "Cobertura en todo el país. Retirá en cualquiera de nuestros puntos regionales o coordiná envío desde el más cercano a tu ciudad.",
-      "tiers": [
-        {
-          "id": "cde",
-          "name": "Ciudad del Este",
-          "description": "Avda. Regimiento Mcal. López 1068, calle Bernardino Caballero.",
-          "included": [
-            "Centro logístico Alto Paraná",
-            "Teléfono: (0522) 433 11"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Ciudad+del+Este"
-        },
-        {
-          "id": "encarnacion",
-          "name": "Encarnación",
-          "description": "Ruta 6 Juan León Mallorquín Km. 3.",
-          "included": [
-            "Centro logístico Itapúa",
-            "Teléfono: (071) 200 057"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Encarnaci%C3%B3n"
-        },
-        {
-          "id": "caaguazu",
-          "name": "Caaguazú",
-          "description": "Carlos Antonio López y Acosta Ñu.",
-          "included": [
-            "Centro logístico Caaguazú",
-            "Teléfono: (0522) 433 11"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Caaguaz%C3%BA"
-        },
-        {
-          "id": "santa-rosa",
-          "name": "Santa Rosa",
-          "description": "Ruta Gral. Elizardo Aquino Km 327 #472.",
-          "included": [
-            "Centro logístico San Pedro"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Santa+Rosa+Paraguay"
-        },
-        {
-          "id": "filadelfia",
-          "name": "Filadelfia (Chaco)",
-          "description": "Calle Karaja 415C, Filadelfia.",
-          "included": [
-            "Centro logístico Chaco",
-            "Teléfono: (0491) 433 586"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Filadelfia+Chaco"
-        },
-        {
-          "id": "planta",
-          "name": "Planta Industrial Villeta",
-          "badge": "Fábrica",
-          "highlighted": true,
-          "description": "Fracción Arroyo Avay y Ruta Ypane, Villeta - Central.",
-          "included": [
-            "Fábrica y casa matriz",
-            "Teléfono: (021) 238 1033",
-            "Visitas industriales a coordinar"
-          ],
-          "ctaLabel": "Abrir en Google Maps",
-          "ctaHref": "https://www.google.com/maps/search/?api=1&query=Superspuma+Villeta+Planta+Industrial"
-        }
-      ]
-    }
+    "title": "Nuestras Tiendas",
+    "subtitle": "Visitanos en cualquiera de nuestras sucursales",
+    "locations": [
+      {
+        "name": "Mariano Roque Alonso",
+        "address": "Mariano Roque Alonso, Paraguay",
+        "phone": "+595 21 782 000",
+        "hours": "L-V 07:30 - 17:00 | S 07:30 - 12:00",
+        "mapsUrl": "https://maps.google.com/?q=Superspuma+Mariano+Roque+Alonso"
+      },
+      {
+        "name": "Fernando de la Mora",
+        "address": "Fernando de la Mora, Paraguay",
+        "phone": "+595 21 505 000",
+        "hours": "L-V 07:30 - 17:00 | S 07:30 - 12:00",
+        "mapsUrl": "https://maps.google.com/?q=Superspuma+Fernando+de+la+Mora"
+      },
+      {
+        "name": "Terminal de Ómnibus",
+        "address": "Terminal de Ómnibus, Asunción",
+        "phone": "+595 21 555 000",
+        "hours": "L-V 08:00 - 17:30 | S 08:30 - 12:00",
+        "mapsUrl": "https://maps.google.com/?q=Superspuma+Terminal+Asuncion"
+      },
+      {
+        "name": "Shopping Villamorra",
+        "address": "Shopping Villamorra, Asunción",
+        "phone": "+595 21 600 000",
+        "hours": "L-S 09:00 - 21:00 | D 11:00 - 21:00",
+        "mapsUrl": "https://maps.google.com/?q=Shopping+Villamorra+Asuncion"
+      },
+      {
+        "name": "Paseo La Galería",
+        "address": "Paseo La Galería, Asunción",
+        "phone": "+595 21 610 000",
+        "hours": "L-J 10:00 - 21:00 | V-S 10:00 - 22:00 | D 10:00 - 21:00",
+        "mapsUrl": "https://maps.google.com/?q=Paseo+La+Galeria+Asuncion"
+      }
+    ]
   },
   "guias": {
     "seo": {
@@ -1827,6 +2004,7 @@
     "home": {
       "title": "superspuma - Paraguay",
       "description": "Sitio web de superspuma"
-    }
+    },
+    "description": "Superspuma - Fabricante líder de colchones en Paraguay desde 1976. Más de 48 años de experiencia, 15 tiendas y 550 colchones producidos diariamente. Resortes, espuma y accesorios para el mejor descanso."
   }
 }

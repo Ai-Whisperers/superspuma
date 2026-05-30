@@ -1,111 +1,138 @@
-"use client"
-
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
-import {
-  MessageCircle, ChevronRight, ShieldCheck, Truck, CreditCard,
-  Check, ArrowRight, Bed, Ruler, Phone,
-} from "lucide-react"
-import { notFound, useParams } from "next/navigation"
+import Image from "next/image"
+import Link from "next/link"
+import { Bed, ChevronRight, ShieldCheck, Truck, CreditCard, MessageCircle, Check, Star, ArrowLeft } from "lucide-react"
 
 const content = raw as any
+const products = content.home?.productCatalog?.products || []
 
-function slugify(name: string) {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "")
+export function generateStaticParams() {
+  return products.map((p: any) => ({ slug: p.slug }))
 }
 
-const allProducts = (content?.home?.productCatalog?.products ?? []).map((p: any) => ({
-  ...p,
-  slug: p.slug ?? slugify(p.name ?? "producto"),
-  line: p.line ?? "Superspuma",
-}))
+export default function ProductoPage({ params }: { params: { slug: string } }) {
+  const product = products.find((p: any) => p.slug === params.slug)
 
-const HERO_IMAGES = [
-  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&q=80",
-]
+  if (!product) {
+    return (
+      <>
+        <Header />
+        <div className="flex min-h-[60vh] items-center justify-center">
+          <div className="text-center">
+            <Bed className="mx-auto w-20 h-20 text-gray-300" />
+            <h1 className="mt-4 text-2xl font-bold text-gray-900">Producto no encontrado</h1>
+            <Link href="/tienda" className="mt-4 inline-flex items-center gap-2 text-[#3A4A5D] hover:text-[#0F1624]">
+              <ArrowLeft className="w-4 h-4" /> Volver a la tienda
+            </Link>
+          </div>
+        </div>
+        <Footer />
+      </>
+    )
+  }
 
-export default function ProductoPage() {
-  const params = useParams()
-  const slugParam = params?.slug
-  const slug = Array.isArray(slugParam) ? slugParam[0] : slugParam
-  if (!slug) notFound()
-
-  const product = allProducts.find((p: any) => p.slug === slug)
-  if (!product) notFound()
-
-  const imgSrc = HERO_IMAGES[Math.abs(slug.charCodeAt(0)) % HERO_IMAGES.length]
-  const waText = `Hola! Quiero info del colchón ${product.name} (${product.price})`
-  const waLink = `https://wa.me/595974202025?text=${encodeURIComponent(waText)}`
-
-  // Find related products (same category, excluding current)
-  const related = allProducts
+  const related = products
     .filter((p: any) => p.category === product.category && p.slug !== product.slug)
     .slice(0, 4)
+
+  const specs = product.specs || {}
 
   return (
     <>
       <Header />
 
-      {/* ── Breadcrumb ── */}
-      <div className="bg-[#F8F9FA] border-b border-gray-200">
-        <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-2 text-sm text-gray-500">
-          <a href="/" className="hover:text-[#0F1624]">Inicio</a>
-          <ChevronRight className="w-3 h-3" />
-          <a href="/tienda" className="hover:text-[#0F1624]">Tienda</a>
-          <ChevronRight className="w-3 h-3" />
-          <span className="text-[#0F1624] font-medium">{product.name}</span>
+      {/* Hero */}
+      <section className="bg-[#0F1624] py-12">
+        <div className="mx-auto max-w-7xl px-4">
+          <nav className="mb-6 flex items-center gap-2 text-sm text-blue-200">
+            <Link href="/" className="hover:text-white">Inicio</Link>
+            <ChevronRight className="w-4 h-4" />
+            <Link href="/tienda" className="hover:text-white">Tienda</Link>
+            <ChevronRight className="w-4 h-4" />
+            <Link href={`/tienda?cat=${encodeURIComponent(product.category)}`} className="hover:text-white">{product.category}</Link>
+            <ChevronRight className="w-4 h-4" />
+            <span className="text-white">{product.name}</span>
+          </nav>
         </div>
-      </div>
+      </section>
 
-      {/* ── Product Detail ── */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-10">
-          <div className="grid md:grid-cols-2 gap-10">
+      {/* Product detail */}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="grid gap-12 lg:grid-cols-2">
             {/* Image */}
-            <div className="relative rounded-2xl overflow-hidden bg-[#F8F9FA] aspect-square">
-              <img src={imgSrc} alt={product.name} className="w-full h-full object-cover" />
-              <div className="absolute top-4 left-4 flex gap-2">
-                <span className="bg-[#0F1624] text-white text-xs font-bold px-3 py-1.5 rounded-full">{product.category}</span>
-              </div>
+            <div className="relative aspect-square overflow-hidden rounded-2xl bg-gray-50">
+              {product.image ? (
+                <Image src={product.image} alt={product.name} fill className="object-contain p-8" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+              ) : (
+                <div className="flex h-full items-center justify-center text-gray-300">
+                  <Bed className="w-32 h-32" />
+                </div>
+              )}
             </div>
 
             {/* Info */}
-            <div className="flex flex-col justify-center">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs font-bold bg-[#EFF2F7] text-[#0F1624] px-3 py-1.5 rounded-full">{product.category}</span>
-                <span className="text-xs font-bold bg-[#0F1624] text-white px-3 py-1.5 rounded-full">Línea {product.line}</span>
-              </div>
+            <div>
+              <span className="inline-block rounded-full bg-[#0F1624]/5 px-4 py-1 text-sm font-semibold text-[#0F1624]">{product.category}</span>
+              <h1 className="mt-4 text-3xl font-extrabold text-[#0F1624] md:text-4xl">{product.name}</h1>
+              <p className="mt-3 text-3xl font-extrabold text-[#0F1624]">{product.price}</p>
+              <p className="mt-4 text-gray-600 leading-relaxed">{product.description}</p>
 
-              <h1 className="text-4xl font-extrabold text-[#0F1624]">{product.name}</h1>
-              <p className="mt-4 text-gray-600 text-lg leading-relaxed">{product.description}</p>
+              {/* Specs table */}
+              {Object.keys(specs).length > 0 && (
+                <div className="mt-8 overflow-hidden rounded-xl border border-gray-200">
+                  <div className="bg-[#0F1624] px-5 py-3">
+                    <h3 className="text-sm font-bold text-white">Ficha Técnica</h3>
+                  </div>
+                  <div className="divide-y divide-gray-100">
+                    {Object.entries(specs).map(([key, val]) => {
+                      const labels: Record<string, string> = {
+                        diseno: "Diseño", tecnologia: "Tecnología", soporte: "Soporte",
+                        altura: "Altura", garantia: "Garantía", colores: "Colores",
+                        tipo: "Tipo", material: "Material", relleno: "Relleno",
+                        almacenamiento: "Almacenamiento"
+                      }
+                      return (
+                        <div key={key} className="flex justify-between px-5 py-3">
+                          <span className="text-sm font-medium text-gray-500">{labels[key] || key}</span>
+                          <span className="text-sm font-semibold text-[#0F1624]">{val as string}</span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
 
-              <div className="mt-8 p-6 bg-[#F8F9FA] rounded-xl">
-                <div className="text-3xl font-extrabold text-[#0F1624]">{product.price}</div>
-                <p className="text-sm text-gray-500 mt-1">Precio desde. Consultá medidas disponibles.</p>
-                <div className="mt-3 flex items-center gap-2 text-sm text-green-700 font-medium">
-                  <CreditCard className="w-4 h-4" /> Hasta 18 cuotas sin interés
+              {/* Trust row */}
+              <div className="mt-6 grid grid-cols-3 gap-3">
+                <div className="flex flex-col items-center rounded-xl bg-green-50 p-3">
+                  <ShieldCheck className="w-6 h-6 text-green-600" />
+                  <span className="mt-1 text-xs font-semibold text-green-700">{specs.garantia || "Garantía"}</span>
+                </div>
+                <div className="flex flex-col items-center rounded-xl bg-blue-50 p-3">
+                  <Truck className="w-6 h-6 text-blue-600" />
+                  <span className="mt-1 text-xs font-semibold text-blue-700">Envío gratis</span>
+                </div>
+                <div className="flex flex-col items-center rounded-xl bg-purple-50 p-3">
+                  <CreditCard className="w-6 h-6 text-purple-600" />
+                  <span className="mt-1 text-xs font-semibold text-purple-700">Cuotas sin interés</span>
                 </div>
               </div>
 
-              <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                <a href={waLink} target="_blank" rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 bg-[#0F1624] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#3A4A5D] transition-all hover:scale-[1.02]">
+              {/* CTA */}
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a href={`https://wa.me/595974202025?text=${encodeURIComponent(`Hola! Me interesa el colchón ${product.name}. ¿Podrían asesorarme?`)}`}
+                  target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-8 py-4 font-bold text-white transition-all hover:bg-green-700 hover:scale-105">
                   <MessageCircle className="w-5 h-5" /> Consultar por WhatsApp
                 </a>
                 <a href="/tiendas"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-[#0F1624] text-[#0F1624] px-8 py-4 rounded-xl font-semibold hover:bg-[#0F1624] hover:text-white transition-all">
-                  <Bed className="w-5 h-5" /> Ver en tienda
+                  className="inline-flex items-center gap-2 rounded-lg border-2 border-[#0F1624] px-8 py-4 font-bold text-[#0F1624] hover:bg-[#0F1624] hover:text-white transition-all">
+                  Visitar Tienda
                 </a>
               </div>
             </div>
@@ -113,44 +140,26 @@ export default function ProductoPage() {
         </div>
       </section>
 
-      {/* ── Trust Row ── */}
-      <section className="bg-[#F8F9FA] border-y border-gray-200">
-        <div className="mx-auto max-w-5xl px-4 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { icon: Truck, text: "Envío a todo el país", sub: "Gratis desde Gs. 1M" },
-              { icon: ShieldCheck, text: "Garantía de fábrica", sub: "2 a 6 años" },
-              { icon: CreditCard, text: "18 cuotas sin interés", sub: "Todas las tarjetas" },
-              { icon: Phone, text: "Servicio técnico", sub: "0981 111 222" },
-            ].map((item, i) => (
-              <div key={i} className="flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#0F1624]">
-                  <item.icon className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold text-[#0F1624]">{item.text}</div>
-                  <div className="text-xs text-gray-500">{item.sub}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Related Products ── */}
+      {/* Related products */}
       {related.length > 0 && (
-        <section className="bg-white">
-          <div className="mx-auto max-w-6xl px-4 py-12">
-            <h2 className="text-2xl font-bold text-[#0F1624]">Otros colchones de {product.category}</h2>
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <section className="bg-[#EFF2F7] py-16">
+          <div className="mx-auto max-w-7xl px-4">
+            <h2 className="mb-8 text-2xl font-bold text-[#0F1624]">Productos relacionados</h2>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((p: any) => (
                 <a key={p.slug} href={`/producto/${p.slug}`}
-                  className="group bg-[#F8F9FA] rounded-xl p-5 border border-gray-100 hover:shadow-lg transition-all">
-                  <h3 className="font-bold text-[#0F1624] group-hover:text-[#3A4A5D]">{p.name}</h3>
-                  <p className="text-sm text-gray-500 mt-2 line-clamp-2">{p.description}</p>
-                  <div className="mt-4 flex items-center justify-between">
-                    <span className="font-bold text-[#0F1624]">{p.price}</span>
-                    <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#0F1624] transition" />
+                  className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
+                  <div className="relative aspect-square bg-gray-50 overflow-hidden">
+                    {p.image ? (
+                      <Image src={p.image} alt={p.name} fill className="object-contain p-4 group-hover:scale-105 transition-transform"
+                        sizes="(max-width: 640px) 100vw, 25vw" />
+                    ) : (
+                      <div className="flex h-full items-center justify-center text-gray-300"><Bed className="w-12 h-12" /></div>
+                    )}
+                  </div>
+                  <div className="p-4">
+                    <h4 className="font-bold text-[#0F1624]">{p.name}</h4>
+                    <p className="mt-1 text-sm font-semibold text-[#3A4A5D]">{p.price}</p>
                   </div>
                 </a>
               ))}
@@ -159,20 +168,8 @@ export default function ProductoPage() {
         </section>
       )}
 
-      {/* ── Final CTA ── */}
-      <section style={{ background: "linear-gradient(135deg, #0F1624 0%, #3A4A5D 100%)" }}>
-        <div className="mx-auto max-w-3xl px-4 py-16 text-center">
-          <h2 className="text-2xl font-bold text-white">¿Te interesa el {product.name}?</h2>
-          <p className="mt-3 text-blue-200">Escribinos y te confirmamos stock, precio final y cuotas.</p>
-          <a href={waLink} target="_blank" rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 bg-white text-[#0F1624] px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all">
-            <MessageCircle className="w-5 h-5" /> Consultar ahora
-          </a>
-        </div>
-      </section>
-
-      <Footer />
-      <WhatsAppFloat phone={content.whatsapp} message={waText} />
+      <Footer businessName="Superspuma" />
+      <WhatsAppFloat phone="595974202025" />
       <MobileCta />
     </>
   )

@@ -3,99 +3,158 @@ import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
-import { MessageCircle, Search, ChevronRight, SlidersHorizontal, ArrowRight } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { Bed, Search, SlidersHorizontal, ChevronRight, X } from "lucide-react"
 
 const content = raw as any
+const catalog = content.home?.productCatalog || {}
+const allProducts = catalog.products || []
+const categories = catalog.categories || []
 
-function slugify(name: string) {
-  return name
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "")
-}
+export default function TiendaPage({ searchParams }: { searchParams: { cat?: string; q?: string } }) {
+  const activeCat = searchParams.cat || ""
+  const query = (searchParams.q || "").toLowerCase()
 
-const products = (content?.home?.productCatalog?.products ?? []).map((p: any) => ({
-  ...p,
-  slug: p.slug ?? slugify(p.name ?? "producto"),
-  line: p.line ?? "Superspuma",
-}))
+  let filtered = activeCat ? allProducts.filter((p: any) => p.category === activeCat) : allProducts
+  if (query) {
+    filtered = filtered.filter((p: any) =>
+      p.name?.toLowerCase().includes(query) || p.description?.toLowerCase().includes(query)
+    )
+  }
 
-const categories = Array.from(new Set(products.map((p: any) => String(p.category || "")).filter(Boolean))) as string[]
+  const grouped = categories.reduce((acc: any, cat: string) => {
+    const items = filtered.filter((p: any) => p.category === cat)
+    if (items.length > 0) acc[cat] = items
+    return acc
+  }, {} as Record<string, any[]>)
 
-const HERO_IMAGES = [
-  "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
-  "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1400&q=80",
-]
-
-export default function TiendaPage() {
   return (
     <>
       <Header />
 
-      {/* ── Hero Banner ── */}
-      <section className="relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0F1624 0%, #1a2744 100%)" }}>
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-white rounded-full blur-3xl" />
-        </div>
-        <div className="relative z-10 mx-auto max-w-6xl px-4 py-16">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white">Nuestra Tienda</h1>
-          <p className="mt-4 text-lg text-blue-200 max-w-xl">{products.length} modelos de colchones, sommiers y accesorios. Encontrá tu descanso ideal.</p>
+      {/* Hero */}
+      <section className="bg-[#0F1624] py-16">
+        <div className="mx-auto max-w-7xl px-4 text-center">
+          <h1 className="text-4xl font-extrabold text-white md:text-5xl">{catalog.title || "Tienda Superspuma"}</h1>
+          <p className="mt-3 text-blue-200">{catalog.subtitle || "Encontrá el colchón perfecto para vos"}</p>
+          {/* Search */}
+          <form className="mt-8 mx-auto max-w-lg flex" action="/tienda">
+            <div className="relative flex-1">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <input type="text" name="q" defaultValue={searchParams.q} placeholder="Buscar productos..."
+                className="w-full rounded-l-lg border-0 py-3 pl-12 pr-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50" />
+            </div>
+            <button type="submit" className="rounded-r-lg bg-white px-6 py-3 font-semibold text-[#0F1624] hover:bg-gray-100">
+              Buscar
+            </button>
+          </form>
         </div>
       </section>
 
-      {/* ── Product Catalog ── */}
-      <section className="bg-[#F8F9FA]">
-        <div className="mx-auto max-w-6xl px-4 py-12">
-          {categories.map((cat) => {
-            const catProducts = products.filter((p: any) => p.category === cat)
-            return (
-              <div key={cat} className="mb-14">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#0F1624]">
-                    <SlidersHorizontal className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h2 className="text-2xl font-bold text-[#0F1624]">{cat}</h2>
-                    <p className="text-sm text-gray-500">{catProducts.length} modelos</p>
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                  {catProducts.map((p: any) => (
-                    <a key={p.slug} href={`/producto/${p.slug}`}
-                      className="group bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg hover:border-gray-200 transition-all hover:scale-[1.01]">
-                      <div className="flex items-start justify-between mb-3">
-                        <h3 className="font-bold text-[#0F1624] group-hover:text-[#3A4A5D] text-lg">{p.name}</h3>
-                        <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#0F1624] transition mt-1" />
+      {/* Category filters */}
+      <section className="border-b bg-white sticky top-[60px] z-30">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex gap-2 overflow-x-auto py-3">
+            <Link href="/tienda"
+              className={`shrink-0 rounded-full px-5 py-2 text-sm font-semibold transition ${!activeCat ? "bg-[#0F1624] text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}>
+              Todos ({allProducts.length})
+            </Link>
+            {categories.map((cat: string) => {
+              const count = allProducts.filter((p: any) => p.category === cat).length
+              return (
+                <Link key={cat} href={`/tienda?cat=${encodeURIComponent(cat)}`}
+                  className={`shrink-0 rounded-full px-5 py-2 text-sm font-semibold transition ${activeCat === cat ? "bg-[#0F1624] text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}>
+                  {cat} ({count})
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Results count */}
+      <section className="bg-[#EFF2F7] py-2 border-b">
+        <div className="mx-auto max-w-7xl px-4 flex items-center justify-between">
+          <p className="text-sm text-gray-500">
+            {filtered.length} producto{filtered.length !== 1 ? "s" : ""}
+            {activeCat ? ` en ${activeCat}` : ""}
+            {query ? ` para "${query}"` : ""}
+          </p>
+          {(activeCat || query) && (
+            <Link href="/tienda" className="text-sm text-[#3A4A5D] hover:text-[#0F1624] flex items-center gap-1">
+              <X className="w-3 h-3" /> Limpiar filtros
+            </Link>
+          )}
+        </div>
+      </section>
+
+      {/* Products grid */}
+      <section className="bg-[#EFF2F7] py-10">
+        <div className="mx-auto max-w-7xl px-4">
+          {Object.keys(grouped).length === 0 ? (
+            <div className="py-20 text-center">
+              <Bed className="mx-auto w-16 h-16 text-gray-300" />
+              <p className="mt-4 text-gray-500">No se encontraron productos</p>
+            </div>
+          ) : (
+            Object.entries(grouped).map(([cat, products]) => (
+              <div key={cat} className="mb-12">
+                <h2 className="mb-6 text-2xl font-bold text-[#0F1624] flex items-center gap-2">
+                  <Bed className="w-6 h-6" /> {cat}
+                </h2>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  {(products as any[]).map((product: any) => (
+                    <a key={product.slug} href={`/producto/${product.slug}`}
+                      className="group overflow-hidden rounded-2xl bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
+                      <div className="relative aspect-square bg-gray-50 overflow-hidden">
+                        {product.image ? (
+                          <Image src={product.image} alt={product.name} fill
+                            className="object-contain p-4 transition-transform group-hover:scale-105"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+                        ) : (
+                          <div className="flex h-full items-center justify-center text-gray-300">
+                            <Bed className="w-16 h-16" />
+                          </div>
+                        )}
+                        {product.specs?.garantia && (
+                          <span className="absolute top-3 right-3 rounded-full bg-green-100 px-3 py-1 text-xs font-semibold text-green-700">
+                            {product.specs.garantia} garantía
+                          </span>
+                        )}
                       </div>
-                      <p className="text-sm text-gray-500 line-clamp-2 min-h-[40px]">{p.description}</p>
-                      <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between">
-                        <span className="text-lg font-bold text-[#0F1624]">{p.price}</span>
-                        <span className="text-[10px] bg-[#EFF2F7] text-gray-600 px-2 py-0.5 rounded-full">{p.line}</span>
+                      <div className="p-5">
+                        <span className="text-xs font-semibold uppercase tracking-wider text-[#3A4A5D]">{cat}</span>
+                        <h3 className="mt-1 text-lg font-bold text-[#0F1624]">{product.name}</h3>
+                        <p className="mt-1 text-sm text-gray-500 line-clamp-2">{product.description}</p>
+                        {product.specs && (
+                          <div className="mt-2 flex flex-wrap gap-1">
+                            {product.specs.tecnologia && (
+                              <span className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-600">{product.specs.tecnologia}</span>
+                            )}
+                            {product.specs.soporte && (
+                              <span className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-600">{product.specs.soporte}</span>
+                            )}
+                          </div>
+                        )}
+                        <div className="mt-3 flex items-center justify-between">
+                          <span className="text-lg font-extrabold text-[#0F1624]">{product.price}</span>
+                          <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#3A4A5D]">
+                            Ver más <ChevronRight className="w-4 h-4" />
+                          </span>
+                        </div>
                       </div>
                     </a>
                   ))}
                 </div>
               </div>
-            )
-          })}
-
-          {/* ── Help CTA ── */}
-          <div className="rounded-2xl p-10 text-center" style={{ background: "linear-gradient(135deg, #0F1624 0%, #3A4A5D 100%)" }}>
-            <h2 className="text-2xl font-bold text-white">¿No encontrás lo que buscás?</h2>
-            <p className="mt-3 text-blue-200">Escribinos y te asesoramos sobre el modelo ideal para vos.</p>
-            <a href="https://wa.me/595974202025?text=Hola!%20Quiero%20asesoramiento%20para%20elegir%20un%20colch%C3%B3n"
-              target="_blank" rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 bg-white text-[#0F1624] px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all">
-              <MessageCircle className="w-5 h-5" /> Consultar por WhatsApp
-            </a>
-          </div>
+            ))
+          )}
         </div>
       </section>
 
-      <Footer />
-      <WhatsAppFloat phone={content.whatsapp} message="Hola! Quiero ver colchones disponibles" />
+      <Footer businessName="Superspuma" />
+      <WhatsAppFloat phone="595974202025" />
       <MobileCta />
     </>
   )

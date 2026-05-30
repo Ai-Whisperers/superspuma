@@ -1,9 +1,30 @@
 import { MetadataRoute } from "next"
+import raw from "@/content/es.json"
 
 const base = "https://superspuma.paragu-ai.com"
+const content = raw as any
+const products = content.home?.productCatalog?.products || []
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    { url: `https://superspuma.paragu-ai.com/admin/content`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+  const staticPages = [
+    { url: `${base}/`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 1.0 },
+    { url: `${base}/tienda`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.9 },
+    { url: `${base}/nosotros`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${base}/tiendas`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${base}/contacto`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.6 },
+    { url: `${base}/guias`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.5 },
+    { url: `${base}/garantia`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.4 },
+    { url: `${base}/faq`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.5 },
+    { url: `${base}/privacidad`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.2 },
+    { url: `${base}/terminos`, lastModified: new Date(), changeFrequency: "yearly" as const, priority: 0.2 },
   ]
+
+  const productPages = products.map((p: any) => ({
+    url: `${base}/producto/${p.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }))
+
+  return [...staticPages, ...productPages]
 }
