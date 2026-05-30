@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Crown, Award, Star, Gem, Sparkles, ArrowRight, Shield, Truck, CreditCard } from "lucide-react";
-import WhatsAppFloat from "@/components/whatsapp-float";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 
 export const metadata = {
   title: "Línea Maestre | Superspuma Premium",

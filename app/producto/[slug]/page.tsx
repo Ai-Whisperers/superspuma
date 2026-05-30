@@ -5,7 +5,6 @@ import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
 import { Bed, ChevronRight, ShieldCheck, Truck, CreditCard, MessageCircle, Check, Star, ArrowLeft } from "lucide-react"
 
 const content = raw as any

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Gift, Clock, Heart, Percent, Star, ShoppingBag, ArrowRight } from "lucide-react";
-import WhatsAppFloat from "@/components/whatsapp-float";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 
 export const metadata = {
   title: "Promo Mamá y Papá | Superspuma Paraguay",
