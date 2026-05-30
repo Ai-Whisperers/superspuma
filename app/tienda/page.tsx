@@ -12,9 +12,10 @@ const catalog = content.home?.productCatalog || {}
 const allProducts = catalog.products || []
 const categories = catalog.categories || []
 
-export default function TiendaPage({ searchParams }: { searchParams: { cat?: string; q?: string } }) {
-  const activeCat = searchParams.cat || ""
-  const query = (searchParams.q || "").toLowerCase()
+export default async function TiendaPage({ searchParams }: { searchParams: Promise<{ cat?: string; q?: string }> }) {
+  const sp = await searchParams
+  const activeCat = sp.cat || ""
+  const query = (sp.q || "").toLowerCase()
 
   let filtered = activeCat ? allProducts.filter((p: any) => p.category === activeCat) : allProducts
   if (query) {
@@ -42,7 +43,7 @@ export default function TiendaPage({ searchParams }: { searchParams: { cat?: str
           <form className="mt-8 mx-auto max-w-lg flex" action="/tienda">
             <div className="relative flex-1">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
-              <input type="text" name="q" defaultValue={searchParams.q} placeholder="Buscar productos..."
+              <input type="text" name="q" defaultValue={sp.q || ""} placeholder="Buscar productos..."
                 className="w-full rounded-l-lg border-0 py-3 pl-12 pr-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50" />
             </div>
             <button type="submit" className="rounded-r-lg bg-white px-6 py-3 font-semibold text-[#0F1624] hover:bg-gray-100">
