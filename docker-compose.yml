@@ -20,7 +20,7 @@ services:
           memory: 128M
       labels:
         - "traefik.enable=true"
-        - "traefik.docker.network=agent-net"
+        - "traefik.swarm.network=agent-net"
         - "traefik.http.routers.superspuma.entrypoints=websecure"
         - "traefik.http.routers.superspuma.rule=Host(`superspuma.paragu-ai.com`)"
         - "traefik.http.routers.superspuma.tls=true"

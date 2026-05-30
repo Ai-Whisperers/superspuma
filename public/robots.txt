@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://superspuma.paragu-ai.com/sitemap.xml
