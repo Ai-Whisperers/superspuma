@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import Image from "next/image"
@@ -141,10 +141,10 @@ export default async function ProductoPage({ params }: { params: Promise<{ slug:
 
               {/* CTA */}
               <div className="mt-8 flex flex-wrap gap-4">
-                <a href={`https://wa.me/595974202025?text=${encodeURIComponent(`Hola! Me interesa el colchón ${product.name}. ¿Podrían asesorarme?`)}`}
+                <a href={`tel:+595974202025?text=${encodeURIComponent(`Hola! Me interesa el colchón ${product.name}. ¿Podrían asesorarme?`)}`}
                   target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-8 py-4 font-bold text-white transition-all hover:bg-green-700 hover:scale-105">
-                  <MessageCircle className="w-5 h-5" /> Consultar por WhatsApp
+                  <MessageCircle className="w-5 h-5" /> Consultar por Messaging
                 </a>
                 <a href="/tiendas"
                   className="inline-flex items-center gap-2 rounded-lg border-2 border-[#0F1624] px-8 py-4 font-bold text-[#0F1624] hover:bg-[#0F1624] hover:text-white transition-all">
@@ -185,7 +185,7 @@ export default async function ProductoPage({ params }: { params: Promise<{ slug:
       )}
 
       <Footer businessName="Superspuma" />
-      <WhatsAppFloat phone="595974202025" />
+      <MessagingFloat phone="595974202025" />
       <MobileCta />
     </>
   )

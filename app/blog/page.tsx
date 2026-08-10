@@ -127,12 +127,12 @@ export default function BlogPage() {
               Ver Catálogo
             </Link>
             <a
-              href="https://wa.me/595974202025?text=Hola,%20necesito%20asesoramiento%20para%20elegir%20un%20colchón"
+              href="tel:+595974202025?text=Hola,%20necesito%20asesoramiento%20para%20elegir%20un%20colchón"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
             >
-              Asesoría por WhatsApp
+              Asesoría por Messaging
             </a>
           </div>
         </div>

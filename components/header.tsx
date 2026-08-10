@@ -39,9 +39,9 @@ export function Header({ logo }: { logo?: string }) {
               {item.label}
             </Link>
           ))}
-          <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"
+          <a href="tel:+595974202025" target="_blank" rel="noopener noreferrer" aria-label="Contactar por Messaging"
             className="ml-3 rounded-md bg-[#0F1624] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#3A4A5D]">
-            WhatsApp
+            Messaging
           </a>
         </nav>
         {/* Mobile menu toggle */}
@@ -66,9 +66,9 @@ function MobileMenu({ navItems }: { navItems: NavItem[] }) {
             {item.label}
           </Link>
         ))}
-        <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer"
+        <a href="tel:+595974202025" target="_blank" rel="noopener noreferrer"
           className="mt-2 block rounded-md bg-[#0F1624] px-4 py-2 text-center text-sm font-semibold text-white">
-          WhatsApp
+          Messaging
         </a>
       </div>
     </details>

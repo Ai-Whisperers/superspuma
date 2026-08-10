@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import Image from "next/image"
@@ -155,7 +155,7 @@ export default async function TiendaPage({ searchParams }: { searchParams: Promi
       </section>
 
       <Footer businessName="Superspuma" />
-      <WhatsAppFloat phone="595974202025" />
+      <MessagingFloat phone="595974202025" />
       <MobileCta />
     </>
   )

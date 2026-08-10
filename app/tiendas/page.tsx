@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import { MapPin, Clock, Phone } from "lucide-react"
@@ -83,15 +83,15 @@ export default function TiendasPage() {
       <section className="bg-[#EFF2F7] py-12">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <p className="text-gray-600">¿No encontrás una tienda cercana? Contactanos y te ayudamos.</p>
-          <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer"
+          <a href="tel:+595974202025" target="_blank" rel="noopener noreferrer"
             className="mt-4 inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-3 font-bold text-white hover:bg-green-700 transition-all">
-            WhatsApp
+            Messaging
           </a>
         </div>
       </section>
 
       <Footer businessName="Superspuma" />
-      <WhatsAppFloat phone="595974202025" />
+      <MessagingFloat phone="595974202025" />
       <MobileCta />
     </>
   )

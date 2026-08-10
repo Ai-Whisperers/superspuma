@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import Image from "next/image"
@@ -63,9 +63,9 @@ function HeroCarousel() {
               <a href="#catalogo" className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-bold text-[#0F1624] transition-all hover:scale-105 hover:shadow-xl">
                 Ver Catálogo <ArrowRight className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer"
+              <a href="tel:+595974202025" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 font-bold text-white transition-all hover:bg-white/10">
-                <MessageCircle className="w-5 h-5" /> WhatsApp
+                <MessageCircle className="w-5 h-5" /> Messaging
               </a>
             </div>
           </div>
@@ -311,11 +311,11 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="text-3xl font-extrabold text-[#0F1624]">¿Listo para dormir mejor?</h2>
-          <p className="mt-4 text-gray-500">Contactanos por WhatsApp y te asesoramos en la elección del colchón perfecto para vos.</p>
+          <p className="mt-4 text-gray-500">Contactanos por Messaging y te asesoramos en la elección del colchón perfecto para vos.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer"
+            <a href="tel:+595974202025" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-8 py-4 font-bold text-white transition-all hover:bg-green-700 hover:scale-105">
-              <MessageCircle className="w-5 h-5" /> Hablar por WhatsApp
+              <MessageCircle className="w-5 h-5" /> Hablar por Messaging
             </a>
             <a href="/tiendas"
               className="inline-flex items-center gap-2 rounded-lg border-2 border-[#0F1624] px-8 py-4 font-bold text-[#0F1624] transition-all hover:bg-[#0F1624] hover:text-white">
@@ -326,7 +326,7 @@ export default function HomePage() {
       </section>
 
       <Footer businessName="Superspuma" />
-      <WhatsAppFloat phone="595974202025" />
+      <MessagingFloat phone="595974202025" />
       <MobileCta />
     </>
   )

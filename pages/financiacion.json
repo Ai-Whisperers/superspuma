@@ -10,7 +10,7 @@
     { "id": "process-timeline", "variant": "horizontal", "content": "financiacion.process" },
     { "id": "enhanced-faq", "variant": "searchable", "content": "financiacion.faq" },
     { "id": "contact", "variant": "split", "content": "home.contact" },
-    { "id": "whatsapp-float", "variant": "standard", "content": "whatsapp" },
+    { "id": "messaging-float", "variant": "standard", "content": "messaging" },
     { "id": "footer", "variant": "standard", "content": "footer" }
   ]
 }

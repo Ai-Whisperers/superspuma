@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import type { Content } from "@/types/content"
 import raw from "@/content/es.json"
@@ -27,7 +27,7 @@ export default function TerminosPage() {
         </div>
       </div>
       <Footer />
-      <WhatsAppFloat phone={c.whatsapp} message="Hola! Tengo una consulta sobre términos" />
+      <MessagingFloat phone={c.messaging} message="Hola! Tengo una consulta sobre términos" />
       <MobileCta />
     </>
   )
