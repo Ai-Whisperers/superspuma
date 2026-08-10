@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import Image from "next/image"
@@ -107,7 +107,7 @@ export default function NosotrosPage() {
             <a href="/tienda" className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-bold text-[#0F1624] hover:scale-105 transition-all">
               Ver Catálogo
             </a>
-            <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer"
+            <a href="tel:+595974202025" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 font-bold text-white hover:bg-white/10 transition-all">
               Contactanos
             </a>
@@ -116,7 +116,7 @@ export default function NosotrosPage() {
       </section>
 
       <Footer businessName="Superspuma" />
-      <WhatsAppFloat phone="595974202025" />
+      <MessagingFloat phone="595974202025" />
       <MobileCta />
     </>
   )

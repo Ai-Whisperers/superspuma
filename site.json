@@ -55,7 +55,7 @@
   "contact": {
     "phone": "+595981111222",
     "email": "info@superspuma.com.py",
-    "whatsapp": "+595974202025",
+    "messaging": "+595974202025",
     "instagram": "@superspumapy",
     "facebook": "superspuma",
     "linkedin": "superspuma-del-paraguay-saeca"
@@ -161,9 +161,9 @@
         "content": "home.contact"
       },
       {
-        "id": "whatsapp-float",
+        "id": "messaging-float",
         "variant": "standard",
-        "content": "whatsapp"
+        "content": "messaging"
       },
       {
         "id": "footer",
@@ -174,7 +174,7 @@
   },
   "isLiveProduction": true,
   "features": {
-    "whatsappFloat": {
+    "messagingFloat": {
       "enabled": true
     },
     "productCatalog": {

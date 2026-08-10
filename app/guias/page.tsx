@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
 import type { Content } from "@/types/content"
@@ -55,7 +55,7 @@ export default function GuiasPage() {
                 </div>
               ))}
             </div>
-            <p className="text-sm text-gray-600 mt-4">Medidas especiales a pedido (5-10 días hábiles). Consultanos por WhatsApp.</p>
+            <p className="text-sm text-gray-600 mt-4">Medidas especiales a pedido (5-10 días hábiles). Consultanos por Messaging.</p>
           </div>
 
           <div className="bg-[#F8F9FA] rounded-xl p-8">
@@ -64,9 +64,9 @@ export default function GuiasPage() {
           </div>
         </div>
       </div>
-      <CtaBanner title="¿Todavía con dudas?" description="Escribinos y te ayudamos a elegir" ctaLabel="Consultar por WhatsApp" ctaHref="https://wa.me/595974202025?text=Hola!%20Necesito%20ayuda%20para%20elegir%20un%20colch%C3%B3n" />
+      <CtaBanner title="¿Todavía con dudas?" description="Escribinos y te ayudamos a elegir" ctaLabel="Consultar por Messaging" ctaHref="tel:+595974202025?text=Hola!%20Necesito%20ayuda%20para%20elegir%20un%20colch%C3%B3n" />
       <Footer />
-      <WhatsAppFloat phone={content.whatsapp} message="Hola! Quiero la guía de compra" />
+      <MessagingFloat phone={content.messaging} message="Hola! Quiero la guía de compra" />
       <MobileCta />
     </>
   )

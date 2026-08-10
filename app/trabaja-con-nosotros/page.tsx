@@ -108,13 +108,13 @@ export default function TrabajaPage() {
                     </div>
                   </div>
                   <a
-                    href="https://wa.me/595974202025?text=Hola,%20me%20interesa%20la%20posición%20de%20Vendedor/a%20de%20Showroom"
+                    href="tel:+595974202025?text=Hola,%20me%20interesa%20la%20posición%20de%20Vendedor/a%20de%20Showroom"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-[#0F1624] text-white px-6 py-3 rounded-lg hover:bg-[#3A4A5D] transition-colors whitespace-nowrap"
                   >
                     <Send className="w-4 h-4" />
-                    Aplicar vía WhatsApp
+                    Aplicar vía Messaging
                   </a>
                 </div>
               </div>
@@ -138,12 +138,12 @@ export default function TrabajaPage() {
               Enviar CV por Email
             </a>
             <a
-              href="https://wa.me/595974202025?text=Hola,%20quiero%20enviar%20mi%20CV%20para%20futuras%20oportunidades"
+              href="tel:+595974202025?text=Hola,%20quiero%20enviar%20mi%20CV%20para%20futuras%20oportunidades"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
             >
-              WhatsApp RRHH
+              Messaging RRHH
             </a>
           </div>
         </div>

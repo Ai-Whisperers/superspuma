@@ -17,7 +17,7 @@
     "name": "Superspuma",
     "legalName": "Superspuma del Paraguay S.A.E.C.A.",
     "founded": "1976",
-    "whatsapp": "+595974202025",
+    "messaging": "+595974202025",
     "phone": "+595981111222",
     "email": "info@superspuma.com.py",
     "instagram": "@superspumapy",
@@ -40,8 +40,8 @@
       "subheadline": "Fábrica paraguaya de colchones y sommiers desde 1976. Envío a todo el país, garantía de fábrica y hasta 18 cuotas sin interés.",
       "ctaPrimaryText": "Ver colchones",
       "ctaPrimaryHref": "#catalogo",
-      "ctaSecondaryText": "Consultar por WhatsApp",
-      "ctaSecondaryHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20colchones%20Superspuma",
+      "ctaSecondaryText": "Consultar por Messaging",
+      "ctaSecondaryHref": "tel:+595974202025?text=Hola!%20Quiero%20informaci%C3%B3n%20sobre%20colchones%20Superspuma",
       "image": "/images/banners/slide-20off.webp"
     },
     "trustBadges": {
@@ -112,9 +112,9 @@
     },
     "productCatalog": {
       "title": "Nuestro catálogo",
-      "subtitle": "19 modelos entre espuma y resorte para cada necesidad y presupuesto. Elegí el tuyo y consultá disponibilidad por WhatsApp.",
-      "whatsappPhone": "595974202025",
-      "orderButtonText": "Consultar por WhatsApp",
+      "subtitle": "19 modelos entre espuma y resorte para cada necesidad y presupuesto. Elegí el tuyo y consultá disponibilidad por Messaging.",
+      "messagingPhone": "595974202025",
+      "orderButtonText": "Consultar por Messaging",
       "orderMessageTemplate": "Hola! Estoy interesado en el colchón {{productName}} ({{productPrice}}). ¿Me pueden dar más información sobre medidas disponibles y tiempo de entrega?",
       "categories": [
         "Resorte",
@@ -589,7 +589,7 @@
             "Funda de poliéster"
           ],
           "ctaLabel": "Consultar Luna Soft",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Luna%20Soft"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Luna%20Soft"
         },
         {
           "id": "harmony",
@@ -608,7 +608,7 @@
             "Hasta 18 cuotas sin interés"
           ],
           "ctaLabel": "Consultar Harmony",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Harmony"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Harmony"
         },
         {
           "id": "duo-confort",
@@ -625,7 +625,7 @@
             "Ideal contra dolor de espalda"
           ],
           "ctaLabel": "Consultar Duo Confort",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Duo%20Confort"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Duo%20Confort"
         },
         {
           "id": "titanium",
@@ -644,7 +644,7 @@
             "3 colores disponibles"
           ],
           "ctaLabel": "Consultar Titanium",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Titanium"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20info%20del%20colch%C3%B3n%20Titanium"
         }
       ]
     },
@@ -663,7 +663,7 @@
         {
           "number": 2,
           "title": "Consultá disponibilidad",
-          "description": "Escribinos por WhatsApp (+595 974 202 025) con el modelo y la medida. Te confirmamos stock, precio final y cuotas.",
+          "description": "Escribinos por Messaging (+595 974 202 025) con el modelo y la medida. Te confirmamos stock, precio final y cuotas.",
           "icon": "MessageCircle",
           "duration": "Respuesta en el día"
         },
@@ -760,10 +760,10 @@
     },
     "enhancedFaq": {
       "title": "Preguntas frecuentes",
-      "subtitle": "Todo lo que querés saber antes de elegir tu colchón. Si no encontrás tu respuesta, escribinos por WhatsApp.",
+      "subtitle": "Todo lo que querés saber antes de elegir tu colchón. Si no encontrás tu respuesta, escribinos por Messaging.",
       "business": {
         "name": "Superspuma",
-        "whatsapp": "+595974202025",
+        "messaging": "+595974202025",
         "phone": "+595981111222"
       },
       "items": [
@@ -800,7 +800,7 @@
         {
           "category": "Entrega",
           "question": "¿Hacen envíos a todo el país?",
-          "answer": "Sí. En Asunción y área metropolitana (Central): 24-72 horas hábiles. En compras mayores a Gs. 1.000.000 el envío es gratuito. Interior del país: 3-7 días hábiles con costo según zona. Cotizamos el envío al confirmar el pedido por WhatsApp."
+          "answer": "Sí. En Asunción y área metropolitana (Central): 24-72 horas hábiles. En compras mayores a Gs. 1.000.000 el envío es gratuito. Interior del país: 3-7 días hábiles con costo según zona. Cotizamos el envío al confirmar el pedido por Messaging."
         },
         {
           "category": "Entrega",
@@ -820,7 +820,7 @@
         {
           "category": "Pago",
           "question": "¿Aceptan transferencia bancaria?",
-          "answer": "Sí. Al confirmar tu pedido por WhatsApp te enviamos los datos bancarios. Una vez recibida la transferencia coordinamos la entrega. Para transferencias se otorga un descuento adicional — consultá al vendedor."
+          "answer": "Sí. Al confirmar tu pedido por Messaging te enviamos los datos bancarios. Una vez recibida la transferencia coordinamos la entrega. Para transferencias se otorga un descuento adicional — consultá al vendedor."
         },
         {
           "category": "Cuidado",
@@ -855,7 +855,7 @@
           "title": "Hasta 18 cuotas sin interés",
           "description": "Con tarjetas Visa, Mastercard, Credicard, Cabal y Pánal.",
           "ctaLabel": "Consultar cuotas",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20consultar%20por%20cuotas%20en%20colchones%20Superspuma",
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20consultar%20por%20cuotas%20en%20colchones%20Superspuma",
           "icon": "CreditCard"
         },
         {
@@ -882,7 +882,7 @@
       "city": "Central, Paraguay",
       "phone": "+595 981 111 222",
       "email": "info@superspuma.com.py",
-      "whatsapp": "+595974202025",
+      "messaging": "+595974202025",
       "googleMapsUrl": "https://maps.google.com/?q=Superspuma+Villeta+Paraguay",
       "hours": {
         "Lunes a Viernes": "07:30 - 17:00",
@@ -1272,7 +1272,7 @@
             "Reparación o reemplazo sin costo dentro del período"
           ],
           "ctaLabel": "Activar mi garantía",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20activar%20la%20garant%C3%ADa%20de%20mi%20colch%C3%B3n%20Superspuma"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20activar%20la%20garant%C3%ADa%20de%20mi%20colch%C3%B3n%20Superspuma"
         },
         {
           "id": "no-cubre",
@@ -1378,7 +1378,7 @@
     },
     "zones": {
       "title": "Cobertura por zona",
-      "subtitle": "Los costos exactos se confirman al coordinar el pedido por WhatsApp. Envío gratis aplica sobre compras desde Gs. 1.000.000.",
+      "subtitle": "Los costos exactos se confirman al coordinar el pedido por Messaging. Envío gratis aplica sobre compras desde Gs. 1.000.000.",
       "tiers": [
         {
           "id": "asuncion",
@@ -1395,7 +1395,7 @@
             "Retiro de colchón viejo sin costo"
           ],
           "ctaLabel": "Consultar cobertura",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20consultar%20env%C3%ADo%20a%20Asunci%C3%B3n"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20consultar%20env%C3%ADo%20a%20Asunci%C3%B3n"
         },
         {
           "id": "central",
@@ -1411,7 +1411,7 @@
             "Despacho desde cualquiera de nuestros 7 puntos en el área"
           ],
           "ctaLabel": "Consultar cobertura",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20consultar%20env%C3%ADo%20al%20Departamento%20Central"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20consultar%20env%C3%ADo%20al%20Departamento%20Central"
         },
         {
           "id": "interior",
@@ -1426,7 +1426,7 @@
             "Envío a casa con costo adicional"
           ],
           "ctaLabel": "Cotizar mi zona",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20cotizar%20env%C3%ADo%20al%20interior"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20cotizar%20env%C3%ADo%20al%20interior"
         },
         {
           "id": "chaco",
@@ -1440,7 +1440,7 @@
             "Consolidación semanal de cargas"
           ],
           "ctaLabel": "Consultar por Chaco",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20consultar%20env%C3%ADo%20al%20Chaco"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20consultar%20env%C3%ADo%20al%20Chaco"
         }
       ]
     },
@@ -1452,7 +1452,7 @@
         {
           "number": 1,
           "title": "Confirmamos tu pedido",
-          "description": "Por WhatsApp cerramos modelo, medida, color y forma de pago. Te enviamos el monto final incluyendo el envío según tu zona.",
+          "description": "Por Messaging cerramos modelo, medida, color y forma de pago. Te enviamos el monto final incluyendo el envío según tu zona.",
           "icon": "MessageCircle",
           "duration": "El día de tu consulta"
         },
@@ -1484,7 +1484,7 @@
       "subtitle": "Lo que más nos consultan antes del despacho.",
       "business": {
         "name": "Superspuma",
-        "whatsapp": "+595974202025",
+        "messaging": "+595974202025",
         "phone": "+595981111222"
       },
       "items": [
@@ -1571,7 +1571,7 @@
           "badge": "Mejor precio",
           "description": "Pago directo a nuestra cuenta. Te aplicamos un descuento adicional sobre el precio de lista.",
           "price": "Descuento aplicado",
-          "priceNote": "Consultá el % por WhatsApp",
+          "priceNote": "Consultá el % por Messaging",
           "included": [
             "Descuento sobre precio de lista",
             "Pago 100% desde home banking",
@@ -1583,7 +1583,7 @@
             "Sin opción de cuotas (pago único)"
           ],
           "ctaLabel": "Consultar transferencia",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20comprar%20con%20transferencia%20y%20consultar%20el%20descuento"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20comprar%20con%20transferencia%20y%20consultar%20el%20descuento"
         },
         {
           "id": "tarjeta",
@@ -1601,7 +1601,7 @@
             "Ejemplo: Gs. 1.500.000 = 18 cuotas de Gs. 83.333"
           ],
           "ctaLabel": "Consultar cuotas",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20sobre%20pago%20en%20cuotas%20con%20tarjeta"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20info%20sobre%20pago%20en%20cuotas%20con%20tarjeta"
         },
         {
           "id": "efectivo-debito",
@@ -1620,7 +1620,7 @@
             "Sin cuotas ni descuentos adicionales"
           ],
           "ctaLabel": "Consultar",
-          "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20pagar%20en%20efectivo%20o%20d%C3%A9bito"
+          "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20pagar%20en%20efectivo%20o%20d%C3%A9bito"
         }
       ]
     },
@@ -1631,7 +1631,7 @@
         {
           "number": 1,
           "title": "Elegí modelo y medida",
-          "description": "Por WhatsApp o en tienda, te pasamos el monto final y confirmamos stock.",
+          "description": "Por Messaging o en tienda, te pasamos el monto final y confirmamos stock.",
           "icon": "Search"
         },
         {
@@ -1653,7 +1653,7 @@
       "subtitle": "Todo sobre cuotas, tarjetas y descuentos.",
       "business": {
         "name": "Superspuma",
-        "whatsapp": "+595974202025",
+        "messaging": "+595974202025",
         "phone": "+595981111222"
       },
       "items": [
@@ -1680,7 +1680,7 @@
         {
           "category": "Transferencia",
           "question": "¿A qué banco y cuenta transfiero?",
-          "answer": "Te pasamos los datos bancarios al confirmar el pedido por WhatsApp. Trabajamos con cuentas en los principales bancos del país para que puedas transferir desde el tuyo sin costo."
+          "answer": "Te pasamos los datos bancarios al confirmar el pedido por Messaging. Trabajamos con cuentas en los principales bancos del país para que puedas transferir desde el tuyo sin costo."
         },
         {
           "category": "Transferencia",
@@ -1711,17 +1711,17 @@
     },
     "terms": {
       "title": "Términos y condiciones de uso y compra",
-      "subtitle": "Leé con atención. Si tenés dudas escribinos por WhatsApp antes de completar tu compra.",
+      "subtitle": "Leé con atención. Si tenés dudas escribinos por Messaging antes de completar tu compra.",
       "business": {
         "name": "Superspuma",
-        "whatsapp": "+595974202025",
+        "messaging": "+595974202025",
         "phone": "+595981111222"
       },
       "items": [
         {
           "category": "1. Identidad",
           "question": "¿Quién es Superspuma?",
-          "answer": "Superspuma del Paraguay S.A.E.C.A. — empresa paraguaya fundada el 24 de julio de 1976. RUC: 30-70136627-8. Domicilio: Ruta Ypané y Arroyo Avay, Villeta, Departamento Central, Paraguay. Email: info@superspuma.com.py · WhatsApp: +595 974 202 025 · Teléfono: +595 981 111 222."
+          "answer": "Superspuma del Paraguay S.A.E.C.A. — empresa paraguaya fundada el 24 de julio de 1976. RUC: 30-70136627-8. Domicilio: Ruta Ypané y Arroyo Avay, Villeta, Departamento Central, Paraguay. Email: info@superspuma.com.py · Messaging: +595 974 202 025 · Teléfono: +595 981 111 222."
         },
         {
           "category": "2. Aceptación",
@@ -1731,7 +1731,7 @@
         {
           "category": "3. Precios",
           "question": "¿Los precios publicados son finales?",
-          "answer": "Los precios están expresados en guaraníes (Gs.) e incluyen IVA. Pueden variar sin previo aviso. El precio aplicable es el vigente al momento de confirmar tu pedido por WhatsApp, tienda o canal oficial. Los precios marcados como 'desde' corresponden a la medida más pequeña disponible del modelo."
+          "answer": "Los precios están expresados en guaraníes (Gs.) e incluyen IVA. Pueden variar sin previo aviso. El precio aplicable es el vigente al momento de confirmar tu pedido por Messaging, tienda o canal oficial. Los precios marcados como 'desde' corresponden a la medida más pequeña disponible del modelo."
         },
         {
           "category": "4. Disponibilidad",
@@ -1796,7 +1796,7 @@
         {
           "category": "16. Contacto",
           "question": "¿Cómo los contacto ante una disputa?",
-          "answer": "Antes de cualquier acción legal te pedimos intentar resolución amistosa contactándonos por info@superspuma.com.py o WhatsApp +595 974 202 025. Respondemos todos los reclamos dentro de las 48 hs hábiles."
+          "answer": "Antes de cualquier acción legal te pedimos intentar resolución amistosa contactándonos por info@superspuma.com.py o Messaging +595 974 202 025. Respondemos todos los reclamos dentro de las 48 hs hábiles."
         }
       ]
     }
@@ -1815,14 +1815,14 @@
       "subtitle": "Cumplimos con la Ley N° 6534/20 de Protección de Datos Personales y demás normativa paraguaya aplicable.",
       "business": {
         "name": "Superspuma",
-        "whatsapp": "+595974202025",
+        "messaging": "+595974202025",
         "phone": "+595981111222"
       },
       "items": [
         {
           "category": "1. Responsable",
           "question": "¿Quién es el responsable del tratamiento?",
-          "answer": "Superspuma del Paraguay S.A.E.C.A., RUC 30-70136627-8, con domicilio en Ruta Ypané y Arroyo Avay, Villeta - Central. Cualquier consulta sobre privacidad: info@superspuma.com.py o WhatsApp +595 974 202 025."
+          "answer": "Superspuma del Paraguay S.A.E.C.A., RUC 30-70136627-8, con domicilio en Ruta Ypané y Arroyo Avay, Villeta - Central. Cualquier consulta sobre privacidad: info@superspuma.com.py o Messaging +595 974 202 025."
         },
         {
           "category": "2. Qué datos",
@@ -1847,7 +1847,7 @@
         {
           "category": "6. Terceros",
           "question": "¿Qué servicios terceros procesan mis datos?",
-          "answer": "Google Analytics 4 (análisis de tráfico, con IP anonimizada); Bancard S.A. (procesamiento de pagos con tarjeta); WhatsApp Business / Meta (cuando nos escribís — Meta tiene sus propias políticas); Google Maps (si interactuás con mapas embebidos). Todos operan con estándares reconocidos de protección de datos."
+          "answer": "Google Analytics 4 (análisis de tráfico, con IP anonimizada); Bancard S.A. (procesamiento de pagos con tarjeta); Messaging Business / Meta (cuando nos escribís — Meta tiene sus propias políticas); Google Maps (si interactuás con mapas embebidos). Todos operan con estándares reconocidos de protección de datos."
         },
         {
           "category": "7. Seguridad",
@@ -1877,7 +1877,7 @@
         {
           "category": "12. Transferencias int.",
           "question": "¿Envían mis datos fuera del Paraguay?",
-          "answer": "Los servicios de Google (Analytics) y Meta (WhatsApp) implican transferencia internacional a Estados Unidos y otros países donde operan sus servidores. Estos proveedores operan bajo marcos internacionales de protección (ej. EU-US Data Privacy Framework) que proveen garantías adecuadas."
+          "answer": "Los servicios de Google (Analytics) y Meta (Messaging) implican transferencia internacional a Estados Unidos y otros países donde operan sus servidores. Estos proveedores operan bajo marcos internacionales de protección (ej. EU-US Data Privacy Framework) que proveen garantías adecuadas."
         },
         {
           "category": "13. Cambios",
@@ -1894,8 +1894,8 @@
   },
   "navigation": {
     "businessName": "Superspuma",
-    "ctaText": "Consultar por WhatsApp",
-    "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20consultar%20por%20un%20colch%C3%B3n%20Superspuma",
+    "ctaText": "Consultar por Messaging",
+    "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20consultar%20por%20un%20colch%C3%B3n%20Superspuma",
     "items": [
       {
         "label": "Inicio",
@@ -1937,7 +1937,7 @@
     "copyright": "© 2026 Superspuma del Paraguay S.A.E.C.A. — Todos los derechos reservados.",
     "address": "Ruta Ypané - Villeta y Arroyo Avay, Villeta, Central",
     "phone": "+595 981 111 222",
-    "whatsapp": "+595 974 202 025",
+    "messaging": "+595 974 202 025",
     "email": "info@superspuma.com.py",
     "links": [
       {
@@ -2020,7 +2020,7 @@
       }
     ]
   },
-  "whatsapp": "+595974202025",
+  "messaging": "+595974202025",
   "seo": {
     "home": {
       "title": "superspuma - Paraguay",

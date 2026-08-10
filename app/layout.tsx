@@ -1,5 +1,5 @@
 import CookieConsent from "@/components/CookieConsent"
-import WhatsAppButton from "@/components/WhatsAppButton"
+import MessagingButton from "@/components/MessagingButton"
 import JsonLd from "@/components/JsonLd"
 import type { Metadata } from 'next'
 import './globals.css'
@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
         <JsonLd />
-        <WhatsAppButton phone="+595974202025" />
+        <MessagingButton phone="+595974202025" />
               <CookieConsent />
       </body>
     </html>

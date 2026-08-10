@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import type { Content } from "@/types/content"
 import raw from "@/content/es.json"
@@ -22,12 +22,12 @@ export default function PrivacidadPage() {
           <h2 className="text-xl font-bold text-[#0F1624]">Protección de datos</h2>
           <p>Implementamos medidas de seguridad técnicas y organizativas para proteger tu información contra acceso no autorizado, pérdida o alteración.</p>
           <h2 className="text-xl font-bold text-[#0F1624]">Tus derechos</h2>
-          <p>Podés solicitar acceso, corrección o eliminación de tus datos personales en cualquier momento contactándonos por WhatsApp o email.</p>
+          <p>Podés solicitar acceso, corrección o eliminación de tus datos personales en cualquier momento contactándonos por Messaging o email.</p>
           <p className="text-sm text-gray-500 mt-8">Última actualización: mayo 2026</p>
         </div>
       </div>
       <Footer />
-      <WhatsAppFloat phone={c.whatsapp} message="Hola! Tengo una consulta sobre privacidad" />
+      <MessagingFloat phone={c.messaging} message="Hola! Tengo una consulta sobre privacidad" />
       <MobileCta />
     </>
   )

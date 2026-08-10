@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
 import type { Content } from "@/types/content"
@@ -44,7 +44,7 @@ export default function GarantiaPage() {
       </div>
       <CtaBanner title="¿Tenés un problema con tu colchón?" description="Comunicate con nuestro servicio técnico" ctaLabel="Llamar al 0981 111 222" ctaHref="tel:+595981111222" />
       <Footer />
-      <WhatsAppFloat phone={c.whatsapp} message="Hola! Tengo una consulta sobre garantía" />
+      <MessagingFloat phone={c.messaging} message="Hola! Tengo una consulta sobre garantía" />
       <MobileCta />
     </>
   )

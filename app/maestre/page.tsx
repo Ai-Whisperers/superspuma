@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Crown, Award, Star, Gem, Sparkles, ArrowRight, Shield, Truck, CreditCard } from "lucide-react";
-import { WhatsAppFloat } from "@/components/whatsapp-float";
+import { MessagingFloat } from "@/components/messaging-float";
 
 export const metadata = {
   title: "Línea Maestre | Superspuma Premium",
@@ -20,7 +20,7 @@ const maestreFeatures = [
 export default function MaestrePage() {
   return (
     <main className="min-h-screen bg-white">
-      <WhatsAppFloat phone="595974202025" />
+      <MessagingFloat phone="595974202025" />
 
       {/* Hero */}
       <section className="relative bg-[#0a0a0a] text-white py-24 overflow-hidden">
@@ -100,7 +100,7 @@ export default function MaestrePage() {
                 <h3 className="text-4xl font-bold mb-2">Maestre</h3>
                 <p className="text-gray-400 mb-6">La experiencia definitiva en descanso</p>
                 <a
-                  href="https://wa.me/595974202025?text=Hola,%20me%20interesa%20la%20línea%20Maestre%20premium"
+                  href="tel:+595974202025?text=Hola,%20me%20interesa%20la%20línea%20Maestre%20premium"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-black px-8 py-4 rounded-lg font-bold hover:from-amber-400 hover:to-amber-500 transition-all"
@@ -141,7 +141,7 @@ export default function MaestrePage() {
             <Link href="/tiendas" className="inline-flex items-center justify-center gap-2 bg-[#0F1624] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#3A4A5D] transition-colors">
               Encontrá tu Tienda <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href="https://wa.me/595974202025?text=Hola,%20quiero%20visitar%20el%20showroom%20para%20ver%20la%20línea%20Maestre" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+            <a href="tel:+595974202025?text=Hola,%20quiero%20visitar%20el%20showroom%20para%20ver%20la%20línea%20Maestre" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
               Agendar Visita
             </a>
           </div>

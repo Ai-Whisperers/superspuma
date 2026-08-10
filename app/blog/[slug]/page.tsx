@@ -157,7 +157,7 @@ Elegir la medida correcta es fundamental. Un colchón demasiado chico incomoda, 
 
 ### Medidas especiales
 
-¿Necesitás una medida no estándar? En Superspuma fabricamos colchones a medida. Consultanos por WhatsApp.
+¿Necesitás una medida no estándar? En Superspuma fabricamos colchones a medida. Consultanos por Messaging.
     `,
   },
   "cuidar-colchon": {
@@ -383,7 +383,7 @@ export default async function BlogArticlePage({ params }: { params: Params }) {
           <p className="text-gray-600 mb-6">Probá nuestros colchones en cualquiera de las 15 sucursales.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/tienda" className="inline-flex items-center justify-center gap-2 bg-[#0F1624] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#3A4A5D] transition-colors">Ver Catálogo</Link>
-            <a href="https://wa.me/595974202025?text=Hola,%20leí%20el%20artículo%20y%20quiero%20asesoramiento" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">Consultar por WhatsApp</a>
+            <a href="tel:+595974202025?text=Hola,%20leí%20el%20artículo%20y%20quiero%20asesoramiento" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">Consultar por Messaging</a>
           </div>
         </div>
       </section>

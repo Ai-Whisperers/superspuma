@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Gift, Clock, Heart, Percent, Star, ShoppingBag, ArrowRight } from "lucide-react";
-import { WhatsAppFloat } from "@/components/whatsapp-float";
+import { MessagingFloat } from "@/components/messaging-float";
 
 export const metadata = {
   title: "Promo Mamá y Papá | Superspuma Paraguay",
@@ -58,7 +58,7 @@ const conditions = [
 export default function PromocionesPage() {
   return (
     <main className="min-h-screen bg-white">
-      <WhatsAppFloat phone="595974202025" />
+      <MessagingFloat phone="595974202025" />
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-[#0F1624] via-[#1a2744] to-[#0F1624] text-white py-20 overflow-hidden">
@@ -118,7 +118,7 @@ export default function PromocionesPage() {
                     ))}
                   </ul>
                   <a
-                    href={`https://wa.me/595974202025?text=Hola,%20me%20interesa%20la%20promo%20${encodeURIComponent(promo.title)}`}
+                    href={`tel:+595974202025?text=Hola,%20me%20interesa%20la%20promo%20${encodeURIComponent(promo.title)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center gap-2 bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
@@ -156,8 +156,8 @@ export default function PromocionesPage() {
             <Link href="/tienda" className="inline-flex items-center justify-center gap-2 bg-white text-[#0F1624] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
               Ver Catálogo Completo <ArrowRight className="w-4 h-4" />
             </Link>
-            <a href="https://wa.me/595974202025?text=Hola,%20quiero%20asesoramiento%20sobre%20las%20promos" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
-              Asesoría WhatsApp
+            <a href="tel:+595974202025?text=Hola,%20quiero%20asesoramiento%20sobre%20las%20promos" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+              Asesoría Messaging
             </a>
           </div>
         </div>

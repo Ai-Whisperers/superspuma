@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
 import type { Content } from "@/types/content"
@@ -22,8 +22,8 @@ export default function ContactoPage() {
             <div className="flex items-start gap-4">
               <MessageCircle className="w-6 h-6 text-[#3A4A5D] shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold">WhatsApp</h3>
-                <a href="https://wa.me/595974202025" className="text-[#3A4A5D] hover:underline">+595 974 202 025</a>
+                <h3 className="font-bold">Messaging</h3>
+                <a href="tel:+595974202025" className="text-[#3A4A5D] hover:underline">+595 974 202 025</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -49,16 +49,16 @@ export default function ContactoPage() {
             </div>
           </div>
           <div className="bg-[#F8F9FA] rounded-xl p-8">
-            <h3 className="font-bold text-lg mb-4">Escribinos por WhatsApp</h3>
+            <h3 className="font-bold text-lg mb-4">Escribinos por Messaging</h3>
             <p className="text-gray-600 mb-6">Es la forma más rápida de contactarnos. Te respondemos en el día.</p>
-            <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#0F1624] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#3A4A5D] transition">
-              <MessageCircle className="w-5 h-5" /> Abrir WhatsApp
+            <a href="tel:+595974202025" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#0F1624] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#3A4A5D] transition">
+              <MessageCircle className="w-5 h-5" /> Abrir Messaging
             </a>
           </div>
         </div>
       </div>
       <Footer />
-      <WhatsAppFloat phone={content.whatsapp} message="Hola! Quiero contactarme con Superspuma" />
+      <MessagingFloat phone={content.messaging} message="Hola! Quiero contactarme con Superspuma" />
       <MobileCta />
     </>
   )
